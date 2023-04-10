@@ -1,0 +1,36 @@
+---
+title: "Lessons"
+description: |
+  
+author:
+  - name: Maryam Nawaz 
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Making a website with R and distill
+
+## Lesson 1
+
+### Learning Objectives
+
+1.	Opening an account at Github 
+2.	Opening a new repository and naming it
+3.	Getting code from Github and creating a new R project
+4.	Installing package (“distill”)
+5.	Create website 
+
+Step 1: Open R and change view settings and appearance.
+Tools-> global options > R markdown > view in viewer pane
+
+Step 2: Open an account with Github. 
+             Create a new repository
+
+
+
+
+

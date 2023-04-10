@@ -1,0 +1,14 @@
+name: "."
+title: "Teaching R"
+description: |
+  Teaching R
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Lessons"
+      href: lessons.html
+    - text: "About"
+      href: about.html
+    - text: "Info"
+      href: info.html
+output: distill::distill_article
