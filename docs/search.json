@@ -6,14 +6,14 @@
       "description": "Some additional details about the website",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2023-04-10T20:23:40+00:00"
+      "last_modified": "2023-04-10T20:58:45+00:00"
     },
     {
       "path": "index.html",
       "title": "Teaching R",
       "author": [],
-      "contents": "\n\n          \n          \n          Teaching R\n          \n          \n          Lessons\n          About\n          Info\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Teaching R\n            \n            \n              \n                \n                    \n                      \n                         Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                         GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        \n                        Contact Us\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Home\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Introduction\n            Here I will show you the steps to create a website using\n            R (@posit.cloud)and distill.\n            Hope it is helpful 😄 🐶\n            \n            \n            \n            \n            Watch these videos\n            for more help\n            \n            \n            \n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Teaching R\n            \n            \n              \n                \n                                    \n                    \n                       Twitter\n                    \n                  \n                                    \n                    \n                       GitHub\n                    \n                  \n                                    \n                    \n                      \n                      Contact Us\n                    \n                  \n                                    \n                    \n                      Home\n                    \n                  \n                                  \n              \n            \n            \n              \n              Introduction\n              Here I will show you the steps to create a website\n              using R (@posit.cloud)and\n              distill. Hope it is helpful 😄 🐶\n              \n              \n              \n              \n              Watch these videos\n              for more help\n              \n              \n              \n              \n            \n        \n      \n    \n\n    \n    \n    ",
-      "last_modified": "2023-04-10T20:23:41+00:00"
+      "contents": "\n\n          \n          \n          Home\n          \n          \n          Lessons\n          About\n          Info\n          ☰\n          \n          \n      \n        \n          \n            \n              \n            \n              Teaching R\n            \n            \n              \n                \n                    \n                      \n                         Twitter\n                      \n                    \n                  \n                                    \n                    \n                      \n                         GitHub\n                      \n                    \n                  \n                                    \n                    \n                      \n                        \n                        Contact Us\n                      \n                    \n                  \n                                    \n                    \n                      \n                        Home\n                      \n                    \n                  \n                                  \n            \n          \n        \n        \n        \n          \n            \n            Introduction\n            Here I will show you the steps to create a website using\n            R (@posit.cloud)and distill.\n            Hope it is helpful 😄 🐶\n            \n            \n            \n            \n            Watch these videos\n            for more help\n            \n            \n          \n        \n      \n    \n\n    \n      \n        \n          \n            \n              \n            \n              Teaching R\n            \n            \n              \n                \n                                    \n                    \n                       Twitter\n                    \n                  \n                                    \n                    \n                       GitHub\n                    \n                  \n                                    \n                    \n                      \n                      Contact Us\n                    \n                  \n                                    \n                    \n                      Home\n                    \n                  \n                                  \n              \n            \n            \n              \n              Introduction\n              Here I will show you the steps to create a website\n              using R (@posit.cloud)and\n              distill. Hope it is helpful 😄 🐶\n              \n              \n              \n              \n              Watch these videos\n              for more help\n              \n              \n            \n        \n      \n    \n\n    \n    \n    ",
+      "last_modified": "2023-04-10T21:00:17+00:00"
     },
     {
       "path": "info.html",
@@ -21,7 +21,7 @@
       "author": [],
       "date": "`r Sys.Date()`",
       "contents": "\n\n\n\n",
-      "last_modified": "2023-04-10T20:23:42+00:00"
+      "last_modified": "2023-04-10T20:58:47+00:00"
     },
     {
       "path": "lessons.html",
@@ -34,7 +34,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\nMaking a website with R and distill\nLesson 1\nLearning Objectives\nOpening an account at Github\nOpening a new repository and naming it\nGetting code from Github and creating a new R project\nInstalling package (“distill”)\nCreate website\nStep 1: Open R and change view settings and appearance.\nTools-> global options > R markdown > view in viewer pane\nStep 2: Open an account with Github.\nCreate a new repository\n\n\n\n",
-      "last_modified": "2023-04-10T20:23:42+00:00"
+      "last_modified": "2023-04-10T20:58:48+00:00"
     }
   ],
   "collections": []

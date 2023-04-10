@@ -1,8 +1,9 @@
 name: "."
-title: "Teaching R"
+title: "Home"
 description: |
   Teaching R
 output_dir: "docs"
+theme: "my_theme.css"
 navbar:
   right:
     - text: "Lessons"
