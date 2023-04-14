@@ -90,28 +90,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Home: Lessons</title>
 
+  <meta property="description" itemprop="description" content="Creating a website with distill"/>
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2023-04-10"/>
-  <meta property="article:created" itemprop="dateCreated" content="2023-04-10"/>
+  <meta property="article:published" itemprop="datePublished" content="2023-04-14"/>
+  <meta property="article:created" itemprop="dateCreated" content="2023-04-14"/>
   <meta name="article:author" content="Maryam Nawaz"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Home: Lessons"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Creating a website with distill"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Home"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Home: Lessons"/>
+  <meta property="twitter:description" content="Creating a website with distill"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Lessons"]},{"type":"NULL"},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Maryam Nawaz"]}]}]},{"type":"character","attributes":{},"value":["2023-04-10"]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Lessons"]},{"type":"character","attributes":{},"value":["Creating a website with distill \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Maryam Nawaz"]}]}]},{"type":"character","attributes":{},"value":["2023-04-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2425,7 +2428,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Lessons","authors":[{"author":"Maryam Nawaz","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-04-10T00:00:00.000+00:00","citationText":"Nawaz, 2023"}
+{"title":"Lessons","description":"Creating a website with distill","authors":[{"author":"Maryam Nawaz","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-04-14T00:00:00.000+00:00","citationText":"Nawaz, 2023"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2437,8 +2440,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <div class="nav-right">
 <a href="lessons.html">Lessons</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+More information
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
 <a href="about.html">About</a>
 <a href="info.html">Info</a>
+</div>
+</div>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -2451,17 +2463,59 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Lessons</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Creating a website with distill</p></p>
 </div>
 
 <div class="d-byline">
   Maryam Nawaz  
   
-<br/>2023-04-10
+<br/>2023-04-14
 </div>
 
 <div class="d-article">
-<h1 id="making-a-website-with-r-and-distill">Making a website with R and distill</h1>
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#lesson-1" id="toc-lesson-1">Lesson 1</a>
+<ul>
+<li><a href="#learning-objectives" id="toc-learning-objectives">Learning Objectives</a></li>
+<li><a href="#step-1-setup-r" id="toc-step-1-setup-r">Step 1: Setup R</a></li>
+<li><a href="#step-2-open-github-account" id="toc-step-2-open-github-account">Step 2: Open Github account</a></li>
+<li><a href="#step-4-clone-repo" id="toc-step-4-clone-repo">Step 4: Clone repo</a></li>
+<li><a href="#step-5-new-project" id="toc-step-5-new-project">Step 5: New project</a></li>
+<li><a href="#step-6-install-distill" id="toc-step-6-install-distill">Step 6: Install distill</a></li>
+<li><a href="#step-7-create-website" id="toc-step-7-create-website">Step 7: Create website</a></li>
+</ul></li>
+<li><a href="#lesson-2" id="toc-lesson-2">Lesson 2</a>
+<ul>
+<li><a href="#learning-objectives-1" id="toc-learning-objectives-1">Learning objectives:</a></li>
+<li><a href="#step-1-choose-layout" id="toc-step-1-choose-layout">Step 1: Choose layout</a></li>
+<li><a href="#step-2-delete-old-index-file" id="toc-step-2-delete-old-index-file">Step 2: Delete old index file</a></li>
+<li><a href="#step-3create-layout" id="toc-step-3create-layout">Step 3:Create layout</a></li>
+<li><a href="#step-4-add-images-to-r" id="toc-step-4-add-images-to-r">Step 4: Add images to R</a></li>
+<li><a href="#step-5-insert-all-your-information-into-pages" id="toc-step-5-insert-all-your-information-into-pages">Step 5: Insert all your information into pages</a></li>
+<li><a href="#step-6-to-insert-emoji" id="toc-step-6-to-insert-emoji">Step 6: To insert emoji</a></li>
+</ul></li>
+<li><a href="#lesson-3" id="toc-lesson-3">Lesson 3</a>
+<ul>
+<li><a href="#learning-objectives-2" id="toc-learning-objectives-2">Learning objectives:</a></li>
+<li><a href="#step-1-adding-more-pages-to-your-website" id="toc-step-1-adding-more-pages-to-your-website">Step 1: Adding more pages to your website</a></li>
+<li><a href="#step-2-add-icons-to-buttons" id="toc-step-2-add-icons-to-buttons">Step 2: Add icons to buttons</a></li>
+<li><a href="#step-3-for-links-to-open-in-new-page-see-above-pic" id="toc-step-3-for-links-to-open-in-new-page-see-above-pic">Step 3: For links to open in new page (see above pic)</a></li>
+<li><a href="#step-4-to-push-to-github" id="toc-step-4-to-push-to-github">Step 4: To push to Github</a></li>
+</ul></li>
+<li><a href="#lesson-4" id="toc-lesson-4">Lesson 4</a>
+<ul>
+<li><a href="#learning-objectives-3" id="toc-learning-objectives-3">Learning objectives:</a></li>
+</ul></li>
+<li><a href="#lesson-5" id="toc-lesson-5">Lesson 5</a>
+<ul>
+<li><a href="#learning-objectives-4" id="toc-learning-objectives-4">Learning objectives:</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
 <h2 id="lesson-1">Lesson 1</h2>
 <h3 id="learning-objectives">Learning Objectives</h3>
 <ol type="1">
@@ -2471,10 +2525,155 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>Installing package (“distill”)</li>
 <li>Create website</li>
 </ol>
-<p>Step 1: Open R and change view settings and appearance.
-Tools-&gt; global options &gt; R markdown &gt; view in viewer pane</p>
-<p>Step 2: Open an account with Github.
-Create a new repository</p>
+<h3 id="step-1-setup-r">Step 1: Setup R</h3>
+<p>Open R and change view settings and appearance.</p>
+<p>Tools-&gt; global options &gt; R markdown &gt; view in viewer pane</p>
+<h3 id="step-2-open-github-account">Step 2: Open Github account</h3>
+<p>Open an account with Github.</p>
+<p>Create a new repository</p>
+<h3 id="step-4-clone-repo">Step 4: Clone repo</h3>
+<p>Copy the code at Github (the URL)</p>
+<ul>
+<li>green code button and copy URL</li>
+</ul>
+<h3 id="step-5-new-project">Step 5: New project</h3>
+<ul>
+<li>Go to R positcloud and open new project (from Git Repository)</li>
+<li>Add the code that you copied at Github</li>
+</ul>
+<h3 id="step-6-install-distill">Step 6: Install distill</h3>
+<ul>
+<li><p>Close and open project again</p></li>
+<li><p>Install “distill” using this code (paste in console) <strong>install.packages(“distill”)</strong> click enter</p></li>
+<li><p>Then paste this code <strong>library(distill)</strong> click enter</p></li>
+</ul>
+<p>Go to packages and check if there is a ‘tick’ next to the distill box</p>
+<h3 id="step-7-create-website">Step 7: Create website</h3>
+<p>Paste this code in consule, write the name of your website</p>
+<p><strong>create_website(dir = “.”, title =“name of your website”, gh_pages = TRUE)</strong></p>
+<p>First change the title of your website and then click “enter” to run code</p>
+<p>Your website is now ready to view. We will learn about layouts next lesson.</p>
+<h2 id="lesson-2">Lesson 2</h2>
+<h3 id="learning-objectives-1">Learning objectives:</h3>
+<ol type="1">
+<li>Find a good layout for your website</li>
+<li>Change the title at yaml</li>
+<li>Add video link and images to pages</li>
+<li>Change layout of text</li>
+<li>Add emoji to website</li>
+</ol>
+<h3 id="step-1-choose-layout">Step 1: Choose layout</h3>
+<p>Choose a layout/template from this website
+<a href="https://github.com/seankross/postcards">Seankross postcards</a>
+Add this code to console: <strong>install.packages(“postcards”)</strong></p>
+<h3 id="step-2-delete-old-index-file">Step 2: Delete old index file</h3>
+<p>Delete index.rmd file in the ‘File’ tab</p>
+<h3 id="step-3create-layout">Step 3:Create layout</h3>
+<p>Add this code to console with your chosen template</p>
+<p><strong>create_article(file =“index”, template= “trestles”, package = “postcards”)</strong></p>
+<p>Now go to index.rmd</p>
+<p>• Copy this code and paste after output in new line:</p>
+<p><strong>site: distill::distill_website</strong></p>
+<p>• This creates the template for the homepage
+• Now this is our new homepage
+• Change title
+• Knit to see a preview of just the homepage</p>
+<h3 id="step-4-add-images-to-r">Step 4: Add images to R</h3>
+<ul>
+<li><p>Add images file to Tab “file”</p></li>
+<li><p>Upload any pictures inside folder</p></li>
+<li><p>And image “images/name of image.jpg” on top of index page.</p></li>
+<li><p>To add picture on any page use this format:
+<strong>[title of image] (images/name of pic.jpg)</strong></p></li>
+<li><p>Add video (from YouTube) to R</p>
+<ul>
+<li><p>Open a Youtube video</p></li>
+<li><p>Click “share” and then “embed” then copy code</p></li>
+<li><p>Add code to your page</p></li>
+</ul></li>
+</ul>
+<h3 id="step-5-insert-all-your-information-into-pages">Step 5: Insert all your information into pages</h3>
+<ul>
+<li>Change layout of page using these symbols</li>
+<li>For title (bigger font) use # biggest ,## smaller, ### smaller</li>
+<li>For bold use <strong>before and after</strong></li>
+<li>For italics use <em>before and after</em></li>
+</ul>
+<h3 id="step-6-to-insert-emoji">Step 6: To insert emoji</h3>
+<p>Run this code</p>
+<p><strong>install.packages(“devtools”)</strong></p>
+<p>then this</p>
+<p><strong>devtools::install_github(“hadley/emo”)</strong></p>
+<p>Now you can add emoji like this:</p>
+<p><strong>😄</strong></p>
+<p>For more names visit <a href="https://github.com/hadley/emo">this page</a></p>
+<h2 id="lesson-3">Lesson 3</h2>
+<h3 id="learning-objectives-2">Learning objectives:</h3>
+<ol type="1">
+<li>Add new pages to your website</li>
+<li>Add icons to buttons</li>
+<li>Push changes to Github</li>
+</ol>
+<h3 id="step-1-adding-more-pages-to-your-website">Step 1: Adding more pages to your website</h3>
+<ul>
+<li>Go to site.yml</li>
+<li>Now copy ( text and href) of ‘about’</li>
+<li>Paste underneath and rename it</li>
+<li>Use this code to make new page</li>
+</ul>
+<p><strong>create_article(“name”)</strong>, exactly same as href</p>
+<h3 id="step-2-add-icons-to-buttons">Step 2: Add icons to buttons</h3>
+<ul>
+<li><p>Go to <a href="https://rgirls.org.uk/">R girls school</a></p></li>
+<li><p>Click github and then website</p></li>
+<li><p>Go to index.rmd</p></li>
+<li><p>Copy codes and paste on your index page</p>
+<ul>
+<li>label: ‘&lt; i class=“fab fa-twitter”&gt; </i> Twitter’
+url: ’<a href="https://twitter.com/R_Girls_School" class="uri">https://twitter.com/R_Girls_School</a> target=“_blank”’</li>
+<li>label: ‘&lt; i class=“fab fa-github”&gt; </i> GitHub’
+url: ’<a href="https://github.com/R-Girls" class="uri">https://github.com/R-Girls</a> target=“_blank”’</li>
+<li>label: ‘&lt; i class=“fas fa-envelope”&gt; &lt; /i&gt; Contact Us’
+url: “<a href="mailto:maryam.nawaz@greenoak.bham.sch.uk" class="uri">mailto:maryam.nawaz@greenoak.bham.sch.uk</a>”</li>
+</ul></li>
+</ul>
+<p>Other available icons-&gt; Go to <a href="https://fontawesome.com/search">website</a> search and copy code</p>
+<h3 id="step-3-for-links-to-open-in-new-page-see-above-pic">Step 3: For links to open in new page (see above pic)</h3>
+<ul>
+<li>In Url first remove “ ” to single ‘ ’</li>
+<li>Add **target=“_blank”** after codes in URL. Inside the ’ ’</li>
+</ul>
+<h3 id="step-4-to-push-to-github">Step 4: To push to Github</h3>
+<p><strong>install.packages(“usethis”)</strong> (click enter)</p>
+<p><strong>usethis::use_git_config(user.name= “msnawaz9”,user.email= “<a href="mailto:maryam.nawaz@greenoak.bham.sch.uk" class="email">maryam.nawaz@greenoak.bham.sch.uk</a>”)</strong></p>
+<ul>
+<li><p>use your own login details</p></li>
+<li><p>Enter in console <strong>usethis::create_github_token()</strong> and get token from Github (90 days)</p></li>
+<li><p>Enter in console <strong>gitcreds::gitcreds_set()</strong></p></li>
+<li><p><strong>Enter password or token:</strong> insert password here</p></li>
+<li><p>Go to Git -&gt;<br />
+</p></li>
+<li><p>Add a message and click commit -&gt; Click push</p></li>
+<li><p>Your website should have updated on Github</p></li>
+<li><p>On Github:
+Go to settings -&gt; Pages -&gt; change branch main to /docs
+Then view your website as its online now</p></li>
+</ul>
+<h2 id="lesson-4">Lesson 4</h2>
+<h3 id="learning-objectives-3">Learning objectives:</h3>
+<ol type="1">
+<li>Create a css file for theme</li>
+<li>Import google fonts</li>
+<li>Import colours for layout</li>
+</ol>
+<h2 id="lesson-5">Lesson 5</h2>
+<h3 id="learning-objectives-4">Learning objectives:</h3>
+<ol type="1">
+<li>Changing the font colours</li>
+<li>Change button colours</li>
+<li>Include a navigation bar</li>
+<li>Add table of contents</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

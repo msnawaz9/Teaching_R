@@ -1,18 +1,20 @@
 ---
 title: "Lessons"
 description: |
-  
+  Creating a website with distill 
 author:
-  - name: Maryam Nawaz 
+  - name: "Maryam Nawaz" 
 date: "`r Sys.Date()`"
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-# Making a website with R and distill
 
 ## Lesson 1
 
@@ -24,11 +26,191 @@ knitr::opts_chunk$set(echo = FALSE)
 4.	Installing package (“distill”)
 5.	Create website 
 
-Step 1: Open R and change view settings and appearance.
+### Step 1: Setup R 
+Open R and change view settings and appearance.
+
 Tools-> global options > R markdown > view in viewer pane
 
-Step 2: Open an account with Github. 
-             Create a new repository
+### Step 2: Open Github account
+Open an account with Github.
+
+Create a new repository
+
+### Step 4: Clone repo
+Copy the code at Github (the URL)
+
+-	green code button and  copy URL 
+
+### Step 5: New project
+- Go to R positcloud and open new project (from Git Repository)
+- Add the code that you copied at Github
+
+### Step 6: Install distill
+- Close and open project again
+-	Install “distill” using this code (paste in console)   **install.packages("distill")** click enter 
+ 
+- Then paste this code **library(distill)** click enter
+ 
+Go to packages and check if there is a ‘tick’ next to the distill box
+
+### Step 7: Create website
+Paste this code in consule, write the name of your website
+
+**create_website(dir = ".", title ="name of your website", gh_pages = TRUE)**
+
+First change the title of your website and then click “enter” to run code
+
+Your website is now ready to view. We will learn about layouts next lesson.
+
+
+
+## Lesson 2 
+
+### Learning objectives: 
+1)	Find a good layout for your website
+2)	Change the title at yaml
+3)	Add video link and images to pages
+4)	Change layout of text
+5)	Add emoji to website
+
+### Step 1: Choose layout
+Choose a layout/template from this website 
+[Seankross postcards](https://github.com/seankross/postcards)
+Add this code to console:   **install.packages("postcards")**
+
+### Step 2: Delete old index file
+Delete index.rmd  file in the ‘File’ tab
+
+### Step 3:Create layout 
+Add this code to console with your chosen template
+
+**create_article(file ="index", template= "trestles", package = "postcards")**
+
+Now go to index.rmd
+
+•	Copy this code and paste after output in new line:
+
+**site: distill::distill_website** 
+
+•	This creates the template for the homepage
+•	Now this is our new homepage 
+•	Change title 
+•	Knit to see a preview of just the homepage
+
+### Step 4: Add images to R
+
+- Add images file to Tab “file”
+- Upload any pictures inside folder
+- And image “images/name of image.jpg” on top of index page.
+- To add picture on any page use this format: 
+ **![title of image] (images/name of pic.jpg)**
+
+- Add video (from YouTube) to R
+
+  - Open  a Youtube video
+  
+  - Click “share” and then “embed” then copy code
+  
+  - Add code to your page
+
+### Step 5: Insert all your information into pages 
+
+- Change layout of page using these symbols
+- For title (bigger font) use   # biggest  ,## smaller, ### smaller
+- For bold use **before and after**
+- For italics use *before and after*
+
+### Step 6: To insert emoji 
+Run this code
+
+**install.packages("devtools")**
+
+then this
+
+**devtools::install_github("hadley/emo")**
+
+Now you can add emoji like this:
+
+ **`r emo::ji("smile")`**
+
+For more names visit [this page](https://github.com/hadley/emo)
+
+## Lesson 3 
+
+### Learning objectives: 
+1)	Add new pages to your website
+2)	Add icons to buttons
+3)	Push changes to Github
+
+### Step 1: Adding more pages to your website
+
+- Go to site.yml
+- Now copy ( text and href) of ‘about’
+- Paste underneath and rename it
+- Use this code to make new page    
+
+**create_article(“name")**, exactly same as href
+ 
+
+### Step 2: Add icons to buttons
+ 
+- Go to [R girls school](https://rgirls.org.uk/)
+
+- Click github and then website
+- Go to index.rmd
+- Copy codes and paste on your index page
+
+  - label: '< i class="fab fa-twitter"> </i> Twitter'
+    url: 'https://twitter.com/R_Girls_School target="_blank"'
+  - label: '< i class="fab fa-github"> </i> GitHub'
+    url: 'https://github.com/R-Girls target="_blank"'
+  - label: '< i class="fas fa-envelope"> < /i> Contact Us'
+    url: "mailto:maryam.nawaz@greenoak.bham.sch.uk"
+ 
+Other available icons-> Go to [website](https://fontawesome.com/search) search and copy code 
+
+
+### Step 3:  For links to open in new page (see above pic)
+ - In Url first remove “ ” to single ‘ ’
+ - Add **target="_blank"** after codes in URL. Inside the ' '
+
+### Step 4:  To push to Github
+
+**install.packages("usethis")**   (click enter)
+
+**usethis::use_git_config(user.name= "msnawaz9",user.email= "maryam.nawaz@greenoak.bham.sch.uk")**
+
+- use your own login details
+
+- Enter in console **usethis::create_github_token()** and get token from Github (90 days)
+
+- Enter in console **gitcreds::gitcreds_set()**
+- **Enter password or token:** insert password here
+
+- Go to Git ->  
+- Add a message and click commit ->   Click push
+- Your website should have updated on Github
+
+
+- On Github:
+Go to settings -> Pages -> change branch main to /docs
+Then view your website as its online now
+
+
+## Lesson 4 
+### Learning objectives: 
+1)	Create a css file for theme
+2)	Import google fonts
+3)	Import colours for layout
+
+
+## Lesson 5
+### Learning objectives: 
+1)	Changing the font colours
+2)	Change button colours
+3)	Include a navigation bar
+4)	Add table of contents
+
 
 
 
