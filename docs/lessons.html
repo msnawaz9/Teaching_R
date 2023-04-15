@@ -2169,7 +2169,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   html {
     /*-- Main font sizes --*/
-    --title-size:      50px;
+    --title-size:      45px;
     --body-size:       1.06rem;
     --code-size:       14px;
     --aside-size:      12px;
@@ -2216,7 +2216,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --title-size:       25px;
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        20px;
-    --hover-color:      red;
+    --hover-color:      green;
     --bkgd-color:       #0F2E3D;
   }
 
@@ -2487,6 +2487,7 @@ More information
 <li><a href="#step-2-delete-old-index-file" id="toc-step-2-delete-old-index-file">Step 2: Delete old index file</a></li>
 <li><a href="#step-3create-layout" id="toc-step-3create-layout">Step 3:Create layout</a></li>
 <li><a href="#step-4-add-images-to-r" id="toc-step-4-add-images-to-r">Step 4: Add images to R</a></li>
+<li><a href="#add-video-from-youtube-to-r" id="toc-add-video-from-youtube-to-r">Add video (from YouTube) to R</a></li>
 <li><a href="#step-5-insert-all-your-information-into-pages" id="toc-step-5-insert-all-your-information-into-pages">Step 5: Insert all your information into pages</a></li>
 <li><a href="#step-6-to-insert-emoji" id="toc-step-6-to-insert-emoji">Step 6: To insert emoji</a></li>
 </ul></li>
@@ -2501,10 +2502,17 @@ More information
 <li><a href="#lesson-4" id="toc-lesson-4">Lesson 4</a>
 <ul>
 <li><a href="#learning-objectives-3" id="toc-learning-objectives-3">Learning objectives:</a></li>
+<li><a href="#stage-1create-new-theme---css-file" id="toc-stage-1create-new-theme---css-file">Stage 1:Create new theme -&gt; css file</a></li>
+<li><a href="#step-2-change-our-font" id="toc-step-2-change-our-font">Step 2: Change our font</a></li>
+<li><a href="#step-3-choose-color-palette" id="toc-step-3-choose-color-palette">Step 3: Choose color palette</a></li>
+<li><a href="#step-6-after-making-all-the-changes-you-want-save-on-github" id="toc-step-6-after-making-all-the-changes-you-want-save-on-github">Step 6: After making all the changes you want save on github</a></li>
 </ul></li>
 <li><a href="#lesson-5" id="toc-lesson-5">Lesson 5</a>
 <ul>
 <li><a href="#learning-objectives-4" id="toc-learning-objectives-4">Learning objectives:</a></li>
+<li><a href="#step-1-copy-this-code-at-the-bottom-of-css-file" id="toc-step-1-copy-this-code-at-the-bottom-of-css-file">Step 1: Copy this code at the bottom of css file</a></li>
+<li><a href="#step2-and-now-copy-this-code-underneath-to-change-button-colours" id="toc-step2-and-now-copy-this-code-underneath-to-change-button-colours">Step2: And now copy this code underneath to change button colours</a></li>
+<li><a href="#step-3-menu-bar-dropdown" id="toc-step-3-menu-bar-dropdown">Step 3: Menu bar (dropdown)</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -2548,18 +2556,34 @@ More information
 <p>Tools-&gt; global options &gt; R markdown &gt; view in viewer pane</p>
 <h3 id="step-7-install-distill">Step 7: Install distill</h3>
 <ul>
-<li><p>Close and open project again</p></li>
-<li><p>Install “distill” using this code (type in console) <strong>install.packages(“distill”)</strong> click enter</p></li>
-<li><p>Then type this code <strong>library(distill)</strong> click enter</p></li>
+<li>Close and open project again</li>
+<li>Install “distill” using this code (type in console)</li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"distill"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>click enter</p>
+<ul>
+<li>Then type this code</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/rstudio/distill'>distill</a></span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>click enter</p>
 <p>Go to packages and check if there is a ‘tick’ next to the distill box</p>
-<p><img src="images/Picture6.png" /></p>
 <h3 id="step-7-create-website">Step 7: Create website</h3>
 <p>Type this code in consule, write the name of your website</p>
-<p><strong>create_website(dir = “.”, title =“name of your website”, gh_pages = TRUE)</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://pkgs.rstudio.com/distill/reference/create_website.html'>create_website</a></span><span class='op'>(</span>dir <span class='op'>=</span> <span class='st'>"."</span>, title <span class='op'>=</span><span class='st'>"name of your website"</span>, gh_pages <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <p>First change the title of your website and then click “enter” to run code</p>
 <p>Your website is now ready to view. We will learn about layouts next lesson.</p>
-<p><img src="images/Picture7.png" /></p>
 <h2 id="lesson-2">Lesson 2</h2>
 <h3 id="learning-objectives-1">Learning objectives:</h3>
 <ol type="1">
@@ -2572,7 +2596,12 @@ More information
 <h3 id="step-1-choose-layout">Step 1: Choose layout</h3>
 <p>Choose a layout/template from this website
 <a href="https://github.com/seankross/postcards">Seankross postcards</a></p>
-<p>Add this code to console: <strong>install.packages(“postcards”)</strong></p>
+<p>Add this code to console:</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"postcards"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <h3 id="step-2-delete-old-index-file">Step 2: Delete old index file</h3>
 <ul>
 <li>Tick index.rmd in files</li>
@@ -2580,46 +2609,69 @@ More information
 </ul>
 <h3 id="step-3create-layout">Step 3:Create layout</h3>
 <p>Add this code to console with your chosen template</p>
-<p><strong>create_article(file =“index”, template= “trestles”, package = “postcards”)</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://pkgs.rstudio.com/distill/reference/create_article.html'>create_article</a></span><span class='op'>(</span>file <span class='op'>=</span><span class='st'>"index"</span>, template<span class='op'>=</span> <span class='st'>"trestles"</span>, package <span class='op'>=</span> <span class='st'>"postcards"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <ul>
 <li>Click on index.rmd from the file list on the right of screen</li>
 <li>Go to top left window</li>
 <li>Copy this code and paste after output in new line:</li>
 </ul>
-<p><strong>site: distill::distill_website</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>site</span><span class='op'>:</span> <span class='fu'>distill</span><span class='fu'>::</span><span class='va'><a href='https://pkgs.rstudio.com/distill/reference/distill_website.html'>distill_website</a></span></span></code></pre>
+</div>
+</div>
+<p><img src="images/Picture8.png" /></p>
 <p>• This creates the template for the homepage
 • Now this is our new homepage
 • Change title
 • Knit to see a preview of just the homepage</p>
 <h3 id="step-4-add-images-to-r">Step 4: Add images to R</h3>
 <ul>
-<li><p>Go to bottom right window “Files”</p></li>
-<li><p>Make a new folder and name it “Images”</p></li>
-<li><p>Upload any pictures inside folder</p></li>
-<li><p>Change image “images/name of image.jpg” on top of index.rmd page.</p></li>
-<li><p>To add picture on any page use this format:
-<strong>[title of image] (images/name of pic.jpg)</strong></p></li>
-<li><p>Add video (from YouTube) to R</p>
+<li>Go to bottom right window “Files”</li>
+<li>Make a new folder and name it “Images”</li>
+<li>Upload any pictures inside folder</li>
+<li>Change image “images/name of image.jpg” on top of index.rmd page.</li>
+<li>To add picture on any page use this format:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span>[title of image](images<span class="sc">/</span>name of pic.jpg)</span></code></pre></div>
+</div>
+<h3 id="add-video-from-youtube-to-r">Add video (from YouTube) to R</h3>
 <ul>
 <li><p>Open a Youtube video</p></li>
 <li><p>Click “share” and then “embed” then copy code</p></li>
 <li><p>Add code to your page</p></li>
-</ul></li>
 </ul>
 <h3 id="step-5-insert-all-your-information-into-pages">Step 5: Insert all your information into pages</h3>
 <ul>
 <li>Change layout of page using these symbols</li>
 <li>For title (bigger font) use # biggest ,## smaller, ### smaller</li>
-<li>For bold use <strong>before and after</strong></li>
-<li>For italics use <em>before and after</em></li>
+<li>For bold use ** before and after **</li>
+<li>For italics use * before and after *</li>
 </ul>
 <h3 id="step-6-to-insert-emoji">Step 6: To insert emoji</h3>
 <p>Run this code</p>
-<p><strong>install.packages(“devtools”)</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"devtools"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <p>then this</p>
-<p><strong>devtools::install_github(“hadley/emo”)</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>devtools</span><span class='fu'>::</span><span class='fu'><a href='https://remotes.r-lib.org/reference/install_github.html'>install_github</a></span><span class='op'>(</span><span class='st'>"hadley/emo"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <p>Now you can add emoji like this:</p>
-<p>😄</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>`r emo::ji("smile")`</span> </span></code></pre>
+</div>
+</div>
 <p>For more names visit <a href="https://github.com/hadley/emo">this page</a></p>
 <h2 id="lesson-3">Lesson 3</h2>
 <h3 id="learning-objectives-2">Learning objectives:</h3>
@@ -2633,37 +2685,77 @@ More information
 <li>Go to site.yml</li>
 <li>Now copy ( text and href) of ‘about’</li>
 <li>Paste underneath and rename it</li>
+</ul>
+<p><img src="images/Picture9.png" /></p>
+<ul>
 <li>Use this code to make new page</li>
 </ul>
-<p><strong>create_article(“name”)</strong>, exactly same as href</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_article</span>(“name<span class="st">&quot;)</span></span></code></pre></div>
+</div>
+<p>exactly same as href</p>
+<pre><code>![](images/Picture10.png) </code></pre>
 <h3 id="step-2-add-icons-to-buttons">Step 2: Add icons to buttons</h3>
 <ul>
 <li><p>Go to <a href="https://rgirls.org.uk/">R girls school</a></p></li>
 <li><p>Click github and then website</p></li>
 <li><p>Go to index.rmd</p></li>
-<li><p>Copy codes and paste on your index page</p>
-<ul>
-<li>label: ‘&lt; i class=“fab fa-twitter”&gt; </i> Twitter’
-url: ’<a href="https://twitter.com/R_Girls_School" class="uri">https://twitter.com/R_Girls_School</a> target=“_blank”’</li>
-<li>label: ‘&lt; i class=“fab fa-github”&gt; </i> GitHub’
-url: ’<a href="https://github.com/R-Girls" class="uri">https://github.com/R-Girls</a> target=“_blank”’</li>
-<li>label: ‘&lt; i class=“fas fa-envelope”&gt; &lt; /i&gt; Contact Us’
-url: “<a href="mailto:maryam.nawaz@greenoak.bham.sch.uk" class="uri">mailto:maryam.nawaz@greenoak.bham.sch.uk</a>”</li>
-</ul></li>
+<li><p>Copy codes and paste on your index page</p></li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt; i class="fab fa-twitter"&gt;&lt;/i&gt; Twitter'</span></span>
+<span>    <span class='va'>url</span><span class='op'>:</span> <span class='st'>'https://twitter.com/R_Girls_School target="_blank"'</span></span>
+<span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt; i class="fab fa-github"&gt;&lt;/i&gt; GitHub'</span></span>
+<span>    <span class='va'>url</span><span class='op'>:</span> <span class='st'>'https://github.com/R-Girls target="_blank"'</span></span>
+<span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt; i class="fas fa-envelope"&gt;&lt; /i&gt; Contact Us'</span></span>
+<span>    <span class='va'>url</span><span class='op'>:</span> <span class='st'>"mailto:maryam.nawaz@greenoak.bham.sch.uk"</span></span></code></pre>
+</div>
+</div>
+<pre><code>![](images/Picture11.png)</code></pre>
+<p><img src="images/Picture12.png" /></p>
 <p>Other available icons-&gt; Go to <a href="https://fontawesome.com/search">website</a> search and copy code</p>
 <h3 id="step-3-for-links-to-open-in-new-page-see-above-pic">Step 3: For links to open in new page (see above pic)</h3>
 <ul>
 <li>In Url first remove “ ” to single ‘ ’</li>
-<li>Add **target=“_blank”** after codes in URL. Inside the ’ ’</li>
+<li>Add</li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>target</span><span class='op'>=</span><span class='st'>"_blank"</span></span></code></pre>
+</div>
+</div>
+<p>after codes in URL. Inside the ’ ’</p>
 <h3 id="step-4-to-push-to-github">Step 4: To push to Github</h3>
-<p><strong>install.packages(“usethis”)</strong> (click enter)</p>
-<p><strong>usethis::use_git_config(user.name= “msnawaz9”,user.email= “<a href="mailto:maryam.nawaz@greenoak.bham.sch.uk" class="email">maryam.nawaz@greenoak.bham.sch.uk</a>”)</strong></p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"usethis"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/use_git_config.html'>use_git_config</a></span><span class='op'>(</span>user.name<span class='op'>=</span> <span class='st'>"msnawaz9"</span>,user.email<span class='op'>=</span> <span class='st'>"maryam.nawaz@greenoak.bham.sch.uk"</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
 <ul>
 <li><p>use your own login details</p></li>
-<li><p>Enter in console <strong>usethis::create_github_token()</strong> and get token from Github (90 days)</p></li>
-<li><p>Enter in console <strong>gitcreds::gitcreds_set()</strong></p></li>
+<li><p>Enter in console</p></li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/github-token.html'>create_github_token</a></span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<p>and get token from Github (90 days)</p>
+<ul>
+<li>Enter in console</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>gitcreds</span><span class='fu'>::</span><span class='fu'><a href='https://gitcreds.r-lib.org/reference/gitcreds_get.html'>gitcreds_set</a></span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
+</div>
+</div>
+<ul>
 <li><p><strong>Enter password or token:</strong> insert password here</p></li>
 <li><p>Go to Git -&gt;<br />
 </p></li>
@@ -2673,6 +2765,7 @@ url: “<a href="mailto:maryam.nawaz@greenoak.bham.sch.uk" class="uri">mailto:ma
 Go to settings -&gt; Pages -&gt; change branch main to /docs
 Then view your website as its online now</p></li>
 </ul>
+<p><img src="images/Picture13.png" /></p>
 <h2 id="lesson-4">Lesson 4</h2>
 <h3 id="learning-objectives-3">Learning objectives:</h3>
 <ol type="1">
@@ -2680,6 +2773,60 @@ Then view your website as its online now</p></li>
 <li>Import google fonts</li>
 <li>Import colours for layout</li>
 </ol>
+<h3 id="stage-1create-new-theme---css-file">Stage 1:Create new theme -&gt; css file</h3>
+<ul>
+<li>Add this code to console</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_theme</span>(“my<span class="sc">-</span>theme”)</span></code></pre></div>
+</div>
+<ul>
+<li>On _Site.yml add line of code after output_dir:</li>
+</ul>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='va'>theme</span><span class='op'>:</span> <span class='va'>my_theme.css</span></span></code></pre>
+</div>
+</div>
+<p><img src="images/Picture14.png" /></p>
+<h3 id="step-2-change-our-font">Step 2: Change our font</h3>
+<ul>
+<li>Import google fonts from this <a href="https://fonts.google.com/">website</a></li>
+<li>Search for fav font and select <span class="citation" data-cites="import">@import</span></li>
+<li>copy the code in between the style tags &lt; style&gt;</li>
+<li>Now add at the top of css file all the fonts you want to use. Customise !!!!</li>
+<li>Add more fonts that you want to use for your website
+<img src="images/Picture15.png" /></li>
+</ul>
+<p><img src="images/Picture16.png" /></p>
+<pre><code>Font sizes (example)
+
+Title size = 40px
+
+Body size = 18px
+
+Code size = 16px</code></pre>
+<ul>
+<li>Always knit to see pages until you are happy with font type and size</li>
+</ul>
+<h3 id="step-3-choose-color-palette">Step 3: Choose color palette</h3>
+<ul>
+<li><p>Go to <a href="https://coolors.co/">coolers website</a></p></li>
+<li><p>Make a palette and download for later use.</p></li>
+<li><p>You can lock colors or press space bar for new colors<br />
+</p></li>
+<li><p>You can export to pdf (HEX and RGB)</p></li>
+<li><p>To change the banner at the top of website go to coding section (my_theme.css file) as shown in pic and here you can change :
+<img src="images/Picture17.png" />
+Example</p></li>
+<li><p>Title size = 28px (how big do you want the banner to be)</p></li>
+<li><p>Text color = what colour do you want the text to be</p></li>
+<li><p>Text size = 28px (size of text)</p></li>
+<li><p>Hover color = white (when you move mouse over the writing what colour should it change into)</p></li>
+<li><p>Background color = #C34A79 (The colour of the banner)</p></li>
+</ul>
+<h3 id="step-6-after-making-all-the-changes-you-want-save-on-github">Step 6: After making all the changes you want save on github</h3>
+<p>Commit- push to save on website</p>
 <h2 id="lesson-5">Lesson 5</h2>
 <h3 id="learning-objectives-4">Learning objectives:</h3>
 <ol type="1">
@@ -2688,7 +2835,40 @@ Then view your website as its online now</p></li>
 <li>Include a navigation bar</li>
 <li>Add table of contents</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<h3 id="step-1-copy-this-code-at-the-bottom-of-css-file">Step 1: Copy this code at the bottom of css file</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>h1 {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>      color<span class="sc">:</span> <span class="co">#C34A79;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>      font<span class="sc">-</span>size<span class="sc">:</span> 36px;</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
+</div>
+<p>Now you can change the colour and font size of your biggest header on website</p>
+<h3 id="step2-and-now-copy-this-code-underneath-to-change-button-colours">Step2: And now copy this code underneath to change button colours</h3>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>  .btn<span class="sc">-</span>outline<span class="sc">-</span>dark {</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> transparent; </span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">:</span> 1px solid;</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    .btn<span class="sc">-</span>outline<span class="sc">-</span>dark<span class="sc">:</span>hover {</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        color<span class="sc">:</span> white;</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
+</div>
+<p>Now you change colours of button using coolers.co website. Also look at <a href="https://github.com/R-Girls/website/blob/main/rgirls-theme.css">R Grils github</a> for further codes.</p>
+<h3 id="step-3-menu-bar-dropdown">Step 3: Menu bar (dropdown)</h3>
+<ul>
+<li><p>Go to _Site.yml</p></li>
+<li><p>The menu argument allows you to add dropdown options so the main button will say lesson plans and then you can have the choice to pick which type of lesson plan</p></li>
+<li><p>Make sure the spaces are properly formatted or you’ll get an error (even one tab off on menu as example)</p></li>
+<li><p>Note: the links won’t work yet because we haven’t created the pages yet</p></li>
+</ul>
+<p><img src="images/Picture18.png" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

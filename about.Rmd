@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### R can be fun to teach and learn.
 
-I have planned these lessons to teach my year 9 girls who are very enthususiastic to learn how to build their website using R coding.
+I have planned these lessons to teach my year 9 girls who are very enthusiastic to learn how to build their website using R coding.
 
 The steps are easy to follow and simple.
 

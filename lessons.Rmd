@@ -58,24 +58,48 @@ Tools-> global options > R markdown > view in viewer pane
 
 ### Step 7: Install distill
 - Close and open project again
--	Install “distill” using this code (type in console)   **install.packages("distill")** click enter 
+-	Install “distill” using this code (type in console)   
+
+```{r eval=FALSE,echo=TRUE}
+
+install.packages("distill")
+
+```
+
+click enter 
  
-- Then type this code **library(distill)** click enter
+- Then type this code
+
+```{r eval=FALSE,echo=TRUE}
+
+library(distill)
+
+```
+
+
+click enter
  
 Go to packages and check if there is a ‘tick’ next to the distill box
 
-![](images/Picture6.png)
+
 
 ### Step 7: Create website
 Type this code in consule, write the name of your website
 
-**create_website(dir = ".", title ="name of your website", gh_pages = TRUE)**
+```{r eval=FALSE,echo=TRUE}
+
+create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
+
+```
+
+
+
 
 First change the title of your website and then click “enter” to run code
 
 Your website is now ready to view. We will learn about layouts next lesson.
 
-![](images/Picture7.png)
+
 
 ## Lesson 2 
 
@@ -90,7 +114,14 @@ Your website is now ready to view. We will learn about layouts next lesson.
 Choose a layout/template from this website 
 [Seankross postcards](https://github.com/seankross/postcards)
 
-Add this code to console:   **install.packages("postcards")**
+Add this code to console:  
+
+```{r eval=FALSE,echo=TRUE}
+
+install.packages("postcards")
+```
+
+
 
 ### Step 2: Delete old index file
 - Tick index.rmd in files
@@ -100,13 +131,25 @@ Add this code to console:   **install.packages("postcards")**
 
 Add this code to console with your chosen template
 
-**create_article(file ="index", template= "trestles", package = "postcards")**
+```{r eval=FALSE,echo=TRUE}
+
+create_article(file ="index", template= "trestles", package = "postcards")
+
+```
+
 
 - Click on index.rmd from the file list on the right of screen
 - Go to top left window
 -	Copy this code and paste after output in new line:
 
-**site: distill::distill_website** 
+```{r eval=FALSE,echo=TRUE}
+
+site: distill::distill_website
+
+
+```
+
+![](images/Picture8.png)
 
 •	This creates the template for the homepage
 •	Now this is our new homepage 
@@ -120,9 +163,15 @@ Add this code to console with your chosen template
 - Upload any pictures inside folder
 - Change image “images/name of image.jpg” on top of index.rmd page.
 - To add picture on any page use this format: 
- **![title of image] (images/name of pic.jpg)**
 
-- Add video (from YouTube) to R
+```{r eval=FALSE,echo=TRUE}
+
+![title of image](images/name of pic.jpg)
+
+```
+ 
+
+### Add video (from YouTube) to R
 
   - Open  a Youtube video
   
@@ -134,21 +183,37 @@ Add this code to console with your chosen template
 
 - Change layout of page using these symbols
 - For title (bigger font) use   # biggest  ,## smaller, ### smaller
-- For bold use **before and after**
-- For italics use *before and after*
+- For bold use ** before and after **
+- For italics use * before and after *
 
 ### Step 6: To insert emoji 
 Run this code
 
-**install.packages("devtools")**
+```{r eval=FALSE,echo=TRUE}
+
+install.packages("devtools")
+
+```
+
 
 then this
 
-**devtools::install_github("hadley/emo")**
+```{r eval=FALSE,echo=TRUE}
+
+devtools::install_github("hadley/emo")
+
+```
+
 
 Now you can add emoji like this:
 
- `r emo::ji("smile")`
+```{r eval=FALSE,echo=TRUE}
+
+`r emo::ji("smile")` 
+
+```
+
+ 
  
 
 For more names visit [this page](https://github.com/hadley/emo)
@@ -165,11 +230,19 @@ For more names visit [this page](https://github.com/hadley/emo)
 - Go to site.yml
 - Now copy ( text and href) of ‘about’
 - Paste underneath and rename it
-- Use this code to make new page    
 
-**create_article(“name")**, exactly same as href
+![](images/Picture9.png) 
+
+- Use this code to make new page 
+
+```{r eval=FALSE,echo=TRUE}
+
+create_article(“name")
+```
+
+ exactly same as href
  
-
+	![](images/Picture10.png) 
 ### Step 2: Add icons to buttons
  
 - Go to [R girls school](https://rgirls.org.uk/)
@@ -178,31 +251,68 @@ For more names visit [this page](https://github.com/hadley/emo)
 - Go to index.rmd
 - Copy codes and paste on your index page
 
-  - label: '< i class="fab fa-twitter"> </i> Twitter'
+```{r eval=FALSE,echo=TRUE}
+
+  - label: '< i class="fab fa-twitter"></i> Twitter'
     url: 'https://twitter.com/R_Girls_School target="_blank"'
-  - label: '< i class="fab fa-github"> </i> GitHub'
+  - label: '< i class="fab fa-github"></i> GitHub'
     url: 'https://github.com/R-Girls target="_blank"'
-  - label: '< i class="fas fa-envelope"> < /i> Contact Us'
+  - label: '< i class="fas fa-envelope">< /i> Contact Us'
     url: "mailto:maryam.nawaz@greenoak.bham.sch.uk"
+
+```
+
+    
+    ![](images/Picture11.png)
  
+![](images/Picture12.png)  
+
 Other available icons-> Go to [website](https://fontawesome.com/search) search and copy code 
 
 
 ### Step 3:  For links to open in new page (see above pic)
  - In Url first remove “ ” to single ‘ ’
- - Add **target="_blank"** after codes in URL. Inside the ' '
+ - Add 
+ 
+ ```{r eval=FALSE,echo=TRUE}
+target="_blank"
+
+```
+ after codes in URL. Inside the ' '
 
 ### Step 4:  To push to Github
 
-**install.packages("usethis")**   (click enter)
 
-**usethis::use_git_config(user.name= "msnawaz9",user.email= "maryam.nawaz@greenoak.bham.sch.uk")**
+```{r eval=FALSE,echo=TRUE}
+
+install.packages("usethis")
+
+```
+
+```{r eval=FALSE,echo=TRUE}
+
+usethis::use_git_config(user.name= "msnawaz9",user.email= "maryam.nawaz@greenoak.bham.sch.uk")
+
+```
 
 - use your own login details
 
-- Enter in console **usethis::create_github_token()** and get token from Github (90 days)
+- Enter in console 
 
-- Enter in console **gitcreds::gitcreds_set()**
+```{r eval=FALSE,echo=TRUE}
+usethis::create_github_token()
+
+```
+
+and get token from Github (90 days)
+
+- Enter in console 
+
+```{r eval=FALSE,echo=TRUE}
+
+gitcreds::gitcreds_set()
+```
+
 - **Enter password or token:** insert password here
 
 - Go to Git ->  
@@ -214,12 +324,85 @@ Other available icons-> Go to [website](https://fontawesome.com/search) search a
 Go to settings -> Pages -> change branch main to /docs
 Then view your website as its online now
 
+![](images/Picture13.png) 
+
 
 ## Lesson 4 
 ### Learning objectives: 
 1)	Create a css file for theme
 2)	Import google fonts
 3)	Import colours for layout
+
+### Stage 1:Create new theme -> css file
+
+- 	Add this code to console   
+
+```{r eval=FALSE,echo=TRUE}
+
+create_theme(“my-theme”)
+
+```
+
+- 	On _Site.yml add line of code after output_dir: 
+
+```{r eval=FALSE,echo=TRUE}
+
+theme: my_theme.css
+
+```
+
+
+![](images/Picture14.png)
+
+### Step 2: Change our font
+
+- Import google fonts from this [website](https://fonts.google.com/)
+- Search for fav font and select @import 
+- copy the code in between the style tags < style>
+- Now add at the top of css file all the fonts you want to use. Customise !!!!
+- Add more fonts that you want to use for your website
+![](images/Picture15.png)
+
+![](images/Picture16.png) 
+
+	Font sizes (example)
+	
+	Title size = 40px
+	
+	Body size = 18px
+	
+	Code size = 16px
+	
+	
+	
+- Always knit to see pages until you are happy with font type and size
+
+
+ 
+### Step 3: Choose color palette     
+
+- Go to [coolers website](https://coolors.co/)
+
+- Make a palette and download for later use.
+- You can lock colors or press space bar for new colors   
+- You can export to pdf (HEX and RGB)
+- To change the banner at the top of website go to coding section (my_theme.css file) as shown in pic and here you can change :
+	![](images/Picture17.png)
+Example
+- Title size = 28px    (how big do you want the banner to be)
+
+- Text color = what colour do you want the text to be
+
+- Text size = 28px   (size of text)
+
+- Hover color = white (when you move mouse over the writing what colour should it change into)
+
+- Background color = #C34A79  (The colour of the banner)
+
+  
+### Step 6: After making all the changes you want save on github
+
+Commit- push to save on website
 
 
 ## Lesson 5
@@ -229,8 +412,52 @@ Then view your website as its online now
 3)	Include a navigation bar
 4)	Add table of contents
 
+### Step 1: Copy this code at the bottom of css file
+
+```{r eval=FALSE,echo=TRUE}
 
 
+h1 {
+	  color: #C34A79;
+	  font-size: 36px;
+	}
+```
 
+
+Now you can change the colour and font size of your biggest header on website
+
+### Step2: And now copy this code underneath to change button colours
+
+```{r eval=FALSE,echo=TRUE}
+  .btn-outline-dark {
+	    background-color: transparent; 
+	    color: rgba(195, 74, 121);
+	    border: 1px solid;
+	    border-color: rgba(195, 74, 121);
+	}
+	
+
+	.btn-outline-dark:hover {
+	    background-color: rgba(195, 74, 121);
+	    border-color: rgba(195, 74, 121);
+	    color: white;
+	}
+
+```
+
+
+Now you change colours of button using coolers.co website. Also look at [R Grils github](https://github.com/R-Girls/website/blob/main/rgirls-theme.css) for further codes.
+
+
+### Step 3: Menu bar (dropdown)
+
+- 	Go to _Site.yml
+- The menu argument allows you to add dropdown options so the main button will say lesson plans and then you can have the choice to pick which type of lesson plan
+
+- 	Make sure the spaces are properly formatted or you’ll get an error (even one tab off on menu as example)
+- Note: the links won’t work yet because we haven’t created the pages yet
+
+
+![](images/Picture18.png)
 
 

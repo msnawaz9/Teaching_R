@@ -1,6 +1,6 @@
 ---
 title: "Teaching R"
-image: "images/website.jpg"
+image: "images/flower2.jpg"
 links:
   - label: '<i class="fab fa-twitter"></i> Twitter'
     url: 'https://twitter.com/R_Girls_School target="_blank"'
@@ -21,7 +21,7 @@ Here I will show you the steps to create a website using R (@posit.cloud)and dis
 
 <center>
 
-![](images/download.jfif)
+![](images/cat.jpg){width=50%}
 
 </center>
 
