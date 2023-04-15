@@ -2,14 +2,13 @@
 title: "Lessons"
 description: |
   Creating a website with distill 
-author:
-  - name: "Maryam Nawaz" 
-date: "`r Sys.Date()`"
+
 output: 
   distill::distill_article:
     toc: true
     toc_depth: 3
     toc_float: true
+    theme: lumen 
 ---
 
 ```{r setup, include=FALSE}
@@ -26,35 +25,49 @@ knitr::opts_chunk$set(echo = FALSE)
 4.	Installing package (“distill”)
 5.	Create website 
 
-### Step 1: Setup R 
+### Step 1: Sign in on Positcloud
+
+### Step 2: Open Github account
+
+- Open an account with Github.
+- Create a new repository
+![](images/Picture1.png)
+
+### Step 3: Name it
+
+- Be careful as this name will be part of your website
+- Tick readme box
+![](images/Picture2.png)
+
+### Step 4: Clone repo
+
+- Copy the code at Github (the URL)
+-	green code button and copy URL 
+![](images/Picture4.png)
+
+### Step 5: New project
+
+- Go to R positcloud and open new project (from Git Repository)
+- Add the code that you copied at Github
+![](images/Picture5.png)
+
+### Step 6: Setup R 
 Open R and change view settings and appearance.
 
 Tools-> global options > R markdown > view in viewer pane
 
-### Step 2: Open Github account
-Open an account with Github.
-
-Create a new repository
-
-### Step 4: Clone repo
-Copy the code at Github (the URL)
-
--	green code button and  copy URL 
-
-### Step 5: New project
-- Go to R positcloud and open new project (from Git Repository)
-- Add the code that you copied at Github
-
-### Step 6: Install distill
+### Step 7: Install distill
 - Close and open project again
--	Install “distill” using this code (paste in console)   **install.packages("distill")** click enter 
+-	Install “distill” using this code (type in console)   **install.packages("distill")** click enter 
  
-- Then paste this code **library(distill)** click enter
+- Then type this code **library(distill)** click enter
  
 Go to packages and check if there is a ‘tick’ next to the distill box
 
+![](images/Picture6.png)
+
 ### Step 7: Create website
-Paste this code in consule, write the name of your website
+Type this code in consule, write the name of your website
 
 **create_website(dir = ".", title ="name of your website", gh_pages = TRUE)**
 
@@ -62,7 +75,7 @@ First change the title of your website and then click “enter” to run code
 
 Your website is now ready to view. We will learn about layouts next lesson.
 
-
+![](images/Picture7.png)
 
 ## Lesson 2 
 
@@ -76,19 +89,22 @@ Your website is now ready to view. We will learn about layouts next lesson.
 ### Step 1: Choose layout
 Choose a layout/template from this website 
 [Seankross postcards](https://github.com/seankross/postcards)
+
 Add this code to console:   **install.packages("postcards")**
 
 ### Step 2: Delete old index file
-Delete index.rmd  file in the ‘File’ tab
+- Tick index.rmd in files
+- Delete index.rmd  file in the ‘File’ tab
 
 ### Step 3:Create layout 
+
 Add this code to console with your chosen template
 
 **create_article(file ="index", template= "trestles", package = "postcards")**
 
-Now go to index.rmd
-
-•	Copy this code and paste after output in new line:
+- Click on index.rmd from the file list on the right of screen
+- Go to top left window
+-	Copy this code and paste after output in new line:
 
 **site: distill::distill_website** 
 
@@ -99,9 +115,10 @@ Now go to index.rmd
 
 ### Step 4: Add images to R
 
-- Add images file to Tab “file”
+- Go to bottom right window "Files"
+- Make a new folder and name it "Images"
 - Upload any pictures inside folder
-- And image “images/name of image.jpg” on top of index page.
+- Change image “images/name of image.jpg” on top of index.rmd page.
 - To add picture on any page use this format: 
  **![title of image] (images/name of pic.jpg)**
 
@@ -131,7 +148,8 @@ then this
 
 Now you can add emoji like this:
 
- **`r emo::ji("smile")`**
+ `r emo::ji("smile")`
+ 
 
 For more names visit [this page](https://github.com/hadley/emo)
 

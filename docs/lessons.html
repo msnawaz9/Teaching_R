@@ -93,10 +93,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <meta property="description" itemprop="description" content="Creating a website with distill"/>
 
 
-  <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2023-04-14"/>
-  <meta property="article:created" itemprop="dateCreated" content="2023-04-14"/>
-  <meta name="article:author" content="Maryam Nawaz"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Home: Lessons"/>
@@ -114,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Lessons"]},{"type":"character","attributes":{},"value":["Creating a website with distill \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Maryam Nawaz"]}]}]},{"type":"character","attributes":{},"value":["2023-04-14"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["Lessons"]},{"type":"character","attributes":{},"value":["Creating a website with distill \n"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["toc","toc_depth","toc_float","theme"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[3]},{"type":"logical","attributes":{},"value":[true]},{"type":"character","attributes":{},"value":["lumen"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2428,7 +2424,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Lessons","description":"Creating a website with distill","authors":[{"author":"Maryam Nawaz","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2023-04-14T00:00:00.000+00:00","citationText":"Nawaz, 2023"}
+{"title":"Lessons","description":"Creating a website with distill","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2466,11 +2462,6 @@ More information
 <p><p>Creating a website with distill</p></p>
 </div>
 
-<div class="d-byline">
-  Maryam Nawaz  
-  
-<br/>2023-04-14
-</div>
 
 <div class="d-article">
 <div class="d-contents d-contents-float">
@@ -2480,11 +2471,13 @@ More information
 <li><a href="#lesson-1" id="toc-lesson-1">Lesson 1</a>
 <ul>
 <li><a href="#learning-objectives" id="toc-learning-objectives">Learning Objectives</a></li>
-<li><a href="#step-1-setup-r" id="toc-step-1-setup-r">Step 1: Setup R</a></li>
+<li><a href="#step-1-sign-in-on-positcloud" id="toc-step-1-sign-in-on-positcloud">Step 1: Sign in on Positcloud</a></li>
 <li><a href="#step-2-open-github-account" id="toc-step-2-open-github-account">Step 2: Open Github account</a></li>
+<li><a href="#step-3-name-it" id="toc-step-3-name-it">Step 3: Name it</a></li>
 <li><a href="#step-4-clone-repo" id="toc-step-4-clone-repo">Step 4: Clone repo</a></li>
 <li><a href="#step-5-new-project" id="toc-step-5-new-project">Step 5: New project</a></li>
-<li><a href="#step-6-install-distill" id="toc-step-6-install-distill">Step 6: Install distill</a></li>
+<li><a href="#step-6-setup-r" id="toc-step-6-setup-r">Step 6: Setup R</a></li>
+<li><a href="#step-7-install-distill" id="toc-step-7-install-distill">Step 7: Install distill</a></li>
 <li><a href="#step-7-create-website" id="toc-step-7-create-website">Step 7: Create website</a></li>
 </ul></li>
 <li><a href="#lesson-2" id="toc-lesson-2">Lesson 2</a>
@@ -2525,34 +2518,48 @@ More information
 <li>Installing package (“distill”)</li>
 <li>Create website</li>
 </ol>
-<h3 id="step-1-setup-r">Step 1: Setup R</h3>
-<p>Open R and change view settings and appearance.</p>
-<p>Tools-&gt; global options &gt; R markdown &gt; view in viewer pane</p>
+<h3 id="step-1-sign-in-on-positcloud">Step 1: Sign in on Positcloud</h3>
 <h3 id="step-2-open-github-account">Step 2: Open Github account</h3>
-<p>Open an account with Github.</p>
-<p>Create a new repository</p>
-<h3 id="step-4-clone-repo">Step 4: Clone repo</h3>
-<p>Copy the code at Github (the URL)</p>
 <ul>
-<li>green code button and copy URL</li>
+<li>Open an account with Github.</li>
+<li>Create a new repository
+<img src="images/Picture1.png" /></li>
+</ul>
+<h3 id="step-3-name-it">Step 3: Name it</h3>
+<ul>
+<li>Be careful as this name will be part of your website</li>
+<li>Tick readme box
+<img src="images/Picture2.png" /></li>
+</ul>
+<h3 id="step-4-clone-repo">Step 4: Clone repo</h3>
+<ul>
+<li>Copy the code at Github (the URL)</li>
+<li>green code button and copy URL
+<img src="images/Picture4.png" /></li>
 </ul>
 <h3 id="step-5-new-project">Step 5: New project</h3>
 <ul>
 <li>Go to R positcloud and open new project (from Git Repository)</li>
-<li>Add the code that you copied at Github</li>
+<li>Add the code that you copied at Github
+<img src="images/Picture5.png" /></li>
 </ul>
-<h3 id="step-6-install-distill">Step 6: Install distill</h3>
+<h3 id="step-6-setup-r">Step 6: Setup R</h3>
+<p>Open R and change view settings and appearance.</p>
+<p>Tools-&gt; global options &gt; R markdown &gt; view in viewer pane</p>
+<h3 id="step-7-install-distill">Step 7: Install distill</h3>
 <ul>
 <li><p>Close and open project again</p></li>
-<li><p>Install “distill” using this code (paste in console) <strong>install.packages(“distill”)</strong> click enter</p></li>
-<li><p>Then paste this code <strong>library(distill)</strong> click enter</p></li>
+<li><p>Install “distill” using this code (type in console) <strong>install.packages(“distill”)</strong> click enter</p></li>
+<li><p>Then type this code <strong>library(distill)</strong> click enter</p></li>
 </ul>
 <p>Go to packages and check if there is a ‘tick’ next to the distill box</p>
+<p><img src="images/Picture6.png" /></p>
 <h3 id="step-7-create-website">Step 7: Create website</h3>
-<p>Paste this code in consule, write the name of your website</p>
+<p>Type this code in consule, write the name of your website</p>
 <p><strong>create_website(dir = “.”, title =“name of your website”, gh_pages = TRUE)</strong></p>
 <p>First change the title of your website and then click “enter” to run code</p>
 <p>Your website is now ready to view. We will learn about layouts next lesson.</p>
+<p><img src="images/Picture7.png" /></p>
 <h2 id="lesson-2">Lesson 2</h2>
 <h3 id="learning-objectives-1">Learning objectives:</h3>
 <ol type="1">
@@ -2564,15 +2571,21 @@ More information
 </ol>
 <h3 id="step-1-choose-layout">Step 1: Choose layout</h3>
 <p>Choose a layout/template from this website
-<a href="https://github.com/seankross/postcards">Seankross postcards</a>
-Add this code to console: <strong>install.packages(“postcards”)</strong></p>
+<a href="https://github.com/seankross/postcards">Seankross postcards</a></p>
+<p>Add this code to console: <strong>install.packages(“postcards”)</strong></p>
 <h3 id="step-2-delete-old-index-file">Step 2: Delete old index file</h3>
-<p>Delete index.rmd file in the ‘File’ tab</p>
+<ul>
+<li>Tick index.rmd in files</li>
+<li>Delete index.rmd file in the ‘File’ tab</li>
+</ul>
 <h3 id="step-3create-layout">Step 3:Create layout</h3>
 <p>Add this code to console with your chosen template</p>
 <p><strong>create_article(file =“index”, template= “trestles”, package = “postcards”)</strong></p>
-<p>Now go to index.rmd</p>
-<p>• Copy this code and paste after output in new line:</p>
+<ul>
+<li>Click on index.rmd from the file list on the right of screen</li>
+<li>Go to top left window</li>
+<li>Copy this code and paste after output in new line:</li>
+</ul>
 <p><strong>site: distill::distill_website</strong></p>
 <p>• This creates the template for the homepage
 • Now this is our new homepage
@@ -2580,9 +2593,10 @@ Add this code to console: <strong>install.packages(“postcards”)</strong></p>
 • Knit to see a preview of just the homepage</p>
 <h3 id="step-4-add-images-to-r">Step 4: Add images to R</h3>
 <ul>
-<li><p>Add images file to Tab “file”</p></li>
+<li><p>Go to bottom right window “Files”</p></li>
+<li><p>Make a new folder and name it “Images”</p></li>
 <li><p>Upload any pictures inside folder</p></li>
-<li><p>And image “images/name of image.jpg” on top of index page.</p></li>
+<li><p>Change image “images/name of image.jpg” on top of index.rmd page.</p></li>
 <li><p>To add picture on any page use this format:
 <strong>[title of image] (images/name of pic.jpg)</strong></p></li>
 <li><p>Add video (from YouTube) to R</p>
@@ -2605,7 +2619,7 @@ Add this code to console: <strong>install.packages(“postcards”)</strong></p>
 <p>then this</p>
 <p><strong>devtools::install_github(“hadley/emo”)</strong></p>
 <p>Now you can add emoji like this:</p>
-<p><strong>😄</strong></p>
+<p>😄</p>
 <p>For more names visit <a href="https://github.com/hadley/emo">this page</a></p>
 <h2 id="lesson-3">Lesson 3</h2>
 <h3 id="learning-objectives-2">Learning objectives:</h3>
