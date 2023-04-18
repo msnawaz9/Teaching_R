@@ -1,18 +1,28 @@
 ---
-title: "name of your website"
-description: |
-  Welcome to the website. I hope you enjoy it!
+title: "Teaching R"
+image: "images/flower2.jpg"
+links:
+  - label: '<i class="fab fa-twitter"></i> Twitter'
+    url: 'https://twitter.com/R_Girls_School target="_blank"'
+  - label: '<i class="fab fa-github"></i> GitHub'
+    url: 'https://github.com/R-Girls target="_blank"'
+  - label: '<i class="fa-solid fa-envelope-open-text fa-beat"></i> Contact Us'
+    url: "mailto:maryam.nawaz@greenoak.bham.sch.uk"
+  - label: '<i class="fa-sharp fa-solid fa-house fa-spin"></i>Home'
+    url: "https://rgirls.org.uk/"
+output:
+  postcards::trestles
 site: distill::distill_website
 ---
+ 
+## Introduction
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+Here I will show you the steps to create a website using R (@posit.cloud)and distill. Hope it is helpful `r emo::ji("smile")` `r emo::ji("dog")`
 
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
+<center>
 
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
+![](images/cat.jpg){width=50%}
 
-```
+</center>
 
+### Watch these [videos](https://www.youtube.com/watch?v=NLU05CopNzU1) for more help

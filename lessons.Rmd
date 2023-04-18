@@ -7,8 +7,6 @@ output:
     toc: true
     toc_float: true
     toc_depth: 3
-    number_section: true
-      
 ---
 
 ```{r setup, include=FALSE}
@@ -300,9 +298,10 @@ devtools::install_github("hadley/emo")
 
 - Paste underneath and rename it
 
-<center>
-![](images/Picture30.png){width=40%}
-</center>
+EXAMPLE:
+
+![](images/Picture30.png){width=30%}
+
 - Use this code to make new page 
 
 ```{r eval=FALSE,echo=TRUE}
@@ -379,6 +378,8 @@ gitcreds::gitcreds_set()
 
 - **Enter password or token:** insert password here
 
+- save this code somewhere as you might need it again later.
+
 - Now go to Git ( top right window) -> click on **commit**
 
 - Tick all the boxes 
@@ -420,9 +421,9 @@ create_theme("my-theme")
 theme: my_theme.css
 
 ```
-<center>
-![](images/Picture14.png){width=50%}
-</center>
+
+![](images/Picture14.png){width=40%}
+
 ### Step 2: Change your font
 
 - Import google fonts from this [website](https://fonts.google.com/)
@@ -433,9 +434,7 @@ theme: my_theme.css
 
 - Now add at the top of css file all the fonts you want to use. Customise !!!!
 
-<center>
 ![](images/Picture32.png){width=50%}
-</center>
 
 ![Example](images/Picture16.png){width=60%}
 
@@ -467,7 +466,7 @@ theme: my_theme.css
 - Background color = #C34A79  (The colour of the banner)
 
   
-### Step 6: After making all the changes you want save on github
+### Step 4: After making all the changes you want save on github
 
 - click **Build** (in top right window) and **then Build Website**
 
@@ -550,9 +549,7 @@ Now you can change the colour and font size of your biggest font on website
 
 - toc_depth is the the differet levels of headers you used
 
-<center>
 ![](images/Picture34.png){width=50%}
-</center>
 
 - click **Build** (in top right window) and **then Build Website**
 
