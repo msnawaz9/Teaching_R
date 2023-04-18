@@ -5,9 +5,10 @@ description: |
 output: 
   distill::distill_article:
     toc: true
-    toc_depth: 3
     toc_float: true
-    theme: lumen 
+    toc_depth: 3
+    number_section: true
+      
 ---
 
 ```{r setup, include=FALSE}
@@ -31,34 +32,43 @@ knitr::opts_chunk$set(echo = FALSE)
 - Open an account with [Github](https://github.com/).
 - Go to your repositories and ceate a new repository
 
-![](images/Picture20.png)
+<center>
+
+![](images/Picture20.png){width=30%}
+
+</center>
 
 ### Step 3: Name your repository
 
 - Be CAREFUL as this name will be part of your website
 
 
+<center>
 
-![](images/Picture21.png)
+![](images/Picture21.png){width=70%}
+</center>
 
 - Add a README file
 
-![](images/Picture22.png) 
-
+<center>
+![](images/Picture22.png){width=70%}
+</center>
 
 ### Step 4: Clone repo
 
 - Click on the green code button and copy URL
 
--	
-![](images/Picture23.png)
-
+<center>
+![](images/Picture23.png){width=50%}
+</center>
 ### Step 5: New project
 
 - Go to R positcloud and open new project (from Git Repository)
 
+<center>
 
-![](images/Picture24.png)
+![](images/Picture24.png){width=50%}
+</center>
 
 - Add the code that you copied at Github
 
@@ -78,7 +88,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Close and open project again
 
--	Install “distill” using this code (type in console)   
+-	Install “distill” using this code (type in console)  
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -87,6 +97,7 @@ install.packages("distill")
 ```
 
 - click ENTER
+
 
 ![](images/Picture25.png)
  
@@ -104,9 +115,9 @@ library(distill)
  
 - Go to packages and check if there is a ‘tick’ next to the distill box
 
-![](images/Picture26.png)
+![](images/Picture26.png){width=75%}
 
-### Step 7: Create website
+### Step 8: Create website
 
 - Copy and paste this code in consule, write the name of your website
 
@@ -116,13 +127,16 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 
 ```
 
+<center>
 ![](images/Picture27.png)
-
+</center>
 - First change the title of your website and then click “ENTER” to run code
 
-### Your website is now ready to view. 
+- click **Build** (in top right window) and **then Build Website**
 
-- We will learn about layouts in the next lesson.
+**Your website is now ready to view.**
+
+ We will learn about layouts in the next lesson.
 
 
 
@@ -176,7 +190,9 @@ site: distill::distill_website
 
 ```
 
+<center>
 ![](images/Picture8.png){width=50%}
+</center>
 
 •	This creates the template for the homepage
 
@@ -196,7 +212,7 @@ site: distill::distill_website
 
 - Choose the Images Compressed folder. Now you can use all your pictures in R
 
-### Change main picture on your Homepage
+### Step 5: Change main picture on your Homepage
 
 - Go to index.rmd
 
@@ -204,9 +220,9 @@ site: distill::distill_website
 
 - Change image by writing down the name of folder >slash > name of image > dot > format of image. ( in between the speech marks)
 
-
-![Example](images/Picture28.png)
-
+<center>
+![Example](images/Picture28.png){width=50%}
+</center>
 - To add picture on any page use this format: 
 
 ```{r eval=FALSE,echo=TRUE}
@@ -216,7 +232,7 @@ site: distill::distill_website
 ```
  
 
-### Add video (from YouTube) to R
+**Add video (from YouTube) to R**
 
   - Open a Youtube video
   
@@ -224,7 +240,7 @@ site: distill::distill_website
   
   - Add code to your page
 
-### Step 5: Insert all your information into pages 
+### Step 6: Insert all your information into pages 
 
 - Change layout of page using these symbols
 
@@ -234,7 +250,7 @@ site: distill::distill_website
 
 - For italics use * before and after *
 
-### Step 6: To insert emoji 
+### Step 7: To insert emoji 
 
 - Run this code in console (bottom left window)
 
@@ -265,6 +281,9 @@ devtools::install_github("hadley/emo")
 - For more emoji names visit [this page](https://github.com/hadley/emo)
 
 
+- click **Build** (in top right window) and **then Build Website**
+
+
 
 ## Lesson 3 
 
@@ -281,8 +300,9 @@ devtools::install_github("hadley/emo")
 
 - Paste underneath and rename it
 
-![](images/Picture30.png) 
-
+<center>
+![](images/Picture30.png){width=40%}
+</center>
 - Use this code to make new page 
 
 ```{r eval=FALSE,echo=TRUE}
@@ -315,11 +335,13 @@ create_article("name")
  
 - Now **Knit** and see changes
 
-- **Taget=_blank** makes sure that the link opens in a new tab (window)
+- "Target=_blank" makes sure that the link opens in a new tab (window)
 
-- For more icons-> Go to [website](https://fontawesome.com/search) search and copy code between the <> marks
+- For more icons-> Go to [website](https://fontawesome.com/search), search and copy code between the <> marks
 
-- keep clicking **Knit** to see changes
+- Keep clicking **Knit** to see changes
+
+-- click **Build** (in top right window) and **then Build Website**
 
 ### Step 3:  To push to Github
 
@@ -363,15 +385,17 @@ gitcreds::gitcreds_set()
 
 - Add a message and click **commit** ->  and then Click **push**
 
-- Your website should have updated on Github
+- Your website should have updated on Github. Go to check on Github.com
 
+**On Github website:**
 
-- On Github:
 Go to settings -> Pages -> change branch main to /docs
-Then view your website as its online now
 
-![](images/Picture13.png) 
+<center>
+![](images/Picture33.png){width=50%}
+</center>
 
+**Then view your website as its online now.**
 
 ## Lesson 4 
 ### Learning objectives: 
@@ -381,65 +405,62 @@ Then view your website as its online now
 
 ### Stage 1:Create new theme -> css file
 
-- 	Add this code to console   
+- Add this code to console   
 
 ```{r eval=FALSE,echo=TRUE}
 
-create_theme(“my-theme”)
+create_theme("my-theme")
 
 ```
 
-- 	On _Site.yml add line of code after output_dir: 
+- On _site.yml add line of code after output_dir: 
 
 ```{r eval=FALSE,echo=TRUE}
 
 theme: my_theme.css
 
 ```
-
-
-![](images/Picture14.png)
-
-### Step 2: Change our font
+<center>
+![](images/Picture14.png){width=50%}
+</center>
+### Step 2: Change your font
 
 - Import google fonts from this [website](https://fonts.google.com/)
+
 - Search for fav font and select @import 
-- copy the code in between the style tags < style>
+
+- Copy the code in between the style tags < style>
+
 - Now add at the top of css file all the fonts you want to use. Customise !!!!
-- Add more fonts that you want to use for your website
-![](images/Picture15.png)
 
-![](images/Picture16.png) 
+<center>
+![](images/Picture32.png){width=50%}
+</center>
 
-	Font sizes (example)
-	
-	Title size = 40px
-	
-	Body size = 18px
-	
-	Code size = 16px
-	
-	
-	
-- Always knit to see pages until you are happy with font type and size
+![Example](images/Picture16.png){width=60%}
 
+- Always **knit** to see changes until you are happy with font type and size
 
- 
 ### Step 3: Choose color palette     
 
 - Go to [coolers website](https://coolors.co/)
 
 - Make a palette and download for later use.
-- You can lock colors or press space bar for new colors   
+
+- You can lock colors you like or press space bar for new colors
+
 - You can export to pdf (HEX and RGB)
-- To change the banner at the top of website go to coding section (my_theme.css file) as shown in pic and here you can change :
-	![](images/Picture17.png)
-Example
-- Title size = 28px    (how big do you want the banner to be)
 
-- Text color = what colour do you want the text to be
+![](images/Picture17.png) 
 
-- Text size = 28px   (size of text)
+- To make changes go to your css file :
+
+### Example
+- Title size = 28px (How big do you want the title to be?)
+
+- Text color = What colour do you want the text to be?
+
+- Text size = 28px (size of text)
 
 - Hover color = white (when you move mouse over the writing what colour should it change into)
 
@@ -448,7 +469,10 @@ Example
   
 ### Step 6: After making all the changes you want save on github
 
-Commit- push to save on website
+- click **Build** (in top right window) and **then Build Website**
+
+- Commit- push to save on website as mentioned above
+
 
 
 ## Lesson 5
@@ -469,8 +493,7 @@ h1 {
 	}
 ```
 
-
-Now you can change the colour and font size of your biggest header on website
+Now you can change the colour and font size of your biggest font on website
 
 ### Step2: And now copy this code underneath to change button colours
 
@@ -492,18 +515,47 @@ Now you can change the colour and font size of your biggest header on website
 ```
 
 
-Now you change colours of button using coolers.co website. Also look at [R Grils github](https://github.com/R-Girls/website/blob/main/rgirls-theme.css) for further codes.
+- Now you change colours of button using coolers.co website.
+
+- Also look at [R Grilsgithub](https://github.com/R-Girls/website/blob/main/rgirls-theme.css) for further codes.
 
 
 ### Step 3: Menu bar (dropdown)
 
-- 	Go to _Site.yml
-- The menu argument allows you to add dropdown options so the main button will say lesson plans and then you can have the choice to pick which type of lesson plan
+- Go to _site.yml
+
+- The menu argument allows you to add dropdown options in the header
 
 - 	Make sure the spaces are properly formatted or you’ll get an error (even one tab off on menu as example)
+
 - Note: the links won’t work yet because we haven’t created the pages yet
 
 
-![](images/Picture18.png)
+![Example](images/Picture18.png){width=75%}
+
+### Step 4: Add table of contents
+
+- Add this code at the top of your page
 
 
+```{r eval=FALSE,echo=TRUE}
+    toc: true
+    toc_depth: 3
+    toc_float: true
+
+```
+
+
+- toc means table of content
+
+- toc_depth is the the differet levels of headers you used
+
+<center>
+![](images/Picture34.png){width=50%}
+</center>
+
+- click **Build** (in top right window) and **then Build Website**
+
+- Push all changes to Github
+
+**Hope you enjoyed making your new website with R `r emo::ji("smile")`**

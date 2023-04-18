@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-We are delighted to announce that we are setting up a worldwide network to promote the use of R - a leading data science programming language - in secondary schools for girls.
+We are delighted to announce that we have set up a worldwide network to promote the use of R - a leading data science programming language - in secondary schools for girls.
 
 Visit our [website](https://rgirls.org.uk/)
 
