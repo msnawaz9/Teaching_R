@@ -2,7 +2,7 @@
 title: "Teaching R"
 image: "images/flower2.jpg"
 links:
-  - label: '<i class="fab fa-twitter"></i> Twitter'
+  - label: '<i class="fa-brands fa-twitter fa-bounce" style="color: #511f33;"></i> Twitter'
     url: 'https://twitter.com/R_Girls_School target="_blank"'
   - label: '<i class="fab fa-github"></i> GitHub'
     url: 'https://github.com/R-Girls target="_blank"'
@@ -21,7 +21,7 @@ Here I will show you the steps to create a website using R (@posit.cloud)and dis
 
 <center>
 
-![](images/cat.jpg){width=50%}
+![<i class="fa-solid fa-cat fa-bounce" style="color: #25511f;"></i>](images/cat.jpg){width=50%}
 
 </center>
 

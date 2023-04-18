@@ -2496,7 +2496,7 @@ More information
 <li><a href="#learning-objectives-2" id="toc-learning-objectives-2">Learning objectives:</a></li>
 <li><a href="#step-1-adding-more-pages-to-your-website" id="toc-step-1-adding-more-pages-to-your-website">Step 1: Adding more pages to your website</a></li>
 <li><a href="#step-2-add-icons-to-buttons" id="toc-step-2-add-icons-to-buttons">Step 2: Add icons to buttons</a></li>
-<li><a href="#step-3-for-links-to-open-in-new-page-see-above-pic" id="toc-step-3-for-links-to-open-in-new-page-see-above-pic">Step 3: For links to open in new page (see above pic)</a></li>
+<li><a href="#for-links-to-open-in-new-page-see-above-pic" id="toc-for-links-to-open-in-new-page-see-above-pic">For links to open in new page (see above pic)</a></li>
 <li><a href="#step-4-to-push-to-github" id="toc-step-4-to-push-to-github">Step 4: To push to Github</a></li>
 </ul></li>
 <li><a href="#lesson-4" id="toc-lesson-4">Lesson 4</a>
@@ -2691,10 +2691,13 @@ More information
 <li>Use this code to make new page</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_article</span>(“name<span class="st">&quot;)</span></span></code></pre></div>
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://pkgs.rstudio.com/distill/reference/create_article.html'>create_article</a></span><span class='op'>(</span><span class='st'>"name"</span><span class='op'>)</span></span></code></pre>
+</div>
 </div>
 <p>exactly same as href</p>
-<pre><code>![](images/Picture10.png) </code></pre>
+<p>Write the title in the top left window</p>
+<p>KNIT</p>
 <h3 id="step-2-add-icons-to-buttons">Step 2: Add icons to buttons</h3>
 <ul>
 <li><p>Go to <a href="https://rgirls.org.uk/">R girls school</a></p></li>
@@ -2704,18 +2707,18 @@ More information
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt; i class="fab fa-twitter"&gt;&lt;/i&gt; Twitter'</span></span>
+<pre class="sourceCode r"><code class="sourceCode r"><span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt;i class="fab fa-twitter"&gt;&lt;/i&gt; Twitter'</span></span>
 <span>    <span class='va'>url</span><span class='op'>:</span> <span class='st'>'https://twitter.com/R_Girls_School target="_blank"'</span></span>
-<span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt; i class="fab fa-github"&gt;&lt;/i&gt; GitHub'</span></span>
+<span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt;i class="fab fa-github"&gt;&lt;/i&gt; GitHub'</span></span>
 <span>    <span class='va'>url</span><span class='op'>:</span> <span class='st'>'https://github.com/R-Girls target="_blank"'</span></span>
-<span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt; i class="fas fa-envelope"&gt;&lt; /i&gt; Contact Us'</span></span>
+<span>  <span class='op'>-</span> <span class='va'>label</span><span class='op'>:</span> <span class='st'>'&lt;i class="fas fa-envelope"&gt;&lt;/i&gt; Contact Us'</span></span>
 <span>    <span class='va'>url</span><span class='op'>:</span> <span class='st'>"mailto:maryam.nawaz@greenoak.bham.sch.uk"</span></span></code></pre>
 </div>
 </div>
 <pre><code>![](images/Picture11.png)</code></pre>
 <p><img src="images/Picture12.png" /></p>
 <p>Other available icons-&gt; Go to <a href="https://fontawesome.com/search">website</a> search and copy code</p>
-<h3 id="step-3-for-links-to-open-in-new-page-see-above-pic">Step 3: For links to open in new page (see above pic)</h3>
+<h3 id="for-links-to-open-in-new-page-see-above-pic">For links to open in new page (see above pic)</h3>
 <ul>
 <li>In Url first remove “ ” to single ‘ ’</li>
 <li>Add</li>
@@ -2727,19 +2730,25 @@ More information
 </div>
 <p>after codes in URL. Inside the ’ ’</p>
 <h3 id="step-4-to-push-to-github">Step 4: To push to Github</h3>
+<ul>
+<li>Enter the following code in concole</li>
+</ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'><a href='https://rdrr.io/r/utils/install.packages.html'>install.packages</a></span><span class='op'>(</span><span class='st'>"usethis"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
+<p>click ENTER</p>
+<ul>
+<li>Now enter this code into console using your login details with Github</li>
+</ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
-<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/use_git_config.html'>use_git_config</a></span><span class='op'>(</span>user.name<span class='op'>=</span> <span class='st'>"msnawaz9"</span>,user.email<span class='op'>=</span> <span class='st'>"maryam.nawaz@greenoak.bham.sch.uk"</span><span class='op'>)</span></span></code></pre>
+<pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>usethis</span><span class='fu'>::</span><span class='fu'><a href='https://usethis.r-lib.org/reference/use_git_config.html'>use_git_config</a></span><span class='op'>(</span>user.name<span class='op'>=</span> <span class='st'>"your user name"</span>,user.email<span class='op'>=</span> <span class='st'>"your email"</span><span class='op'>)</span></span></code></pre>
 </div>
 </div>
 <ul>
-<li><p>use your own login details</p></li>
-<li><p>Enter in console</p></li>
+<li>Enter in console</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -2747,9 +2756,6 @@ More information
 </div>
 </div>
 <p>and get token from Github (90 days)</p>
-<ul>
-<li>Enter in console</li>
-</ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span><span class='fu'>gitcreds</span><span class='fu'>::</span><span class='fu'><a href='https://gitcreds.r-lib.org/reference/gitcreds_get.html'>gitcreds_set</a></span><span class='op'>(</span><span class='op'>)</span></span></code></pre>
@@ -2757,8 +2763,9 @@ More information
 </div>
 <ul>
 <li><p><strong>Enter password or token:</strong> insert password here</p></li>
-<li><p>Go to Git -&gt;<br />
+<li><p>Go to Git ( top right window) -&gt;<br />
 </p></li>
+<li><p>Tick all the boxes</p></li>
 <li><p>Add a message and click commit -&gt; Click push</p></li>
 <li><p>Your website should have updated on Github</p></li>
 <li><p>On Github:
@@ -2778,7 +2785,7 @@ Then view your website as its online now</p></li>
 <li>Add this code to console</li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_theme</span>(“my<span class="sc">-</span>theme”)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">create_theme</span>(“my<span class="sc">-</span>theme”)</span></code></pre></div>
 </div>
 <ul>
 <li>On _Site.yml add line of code after output_dir:</li>
@@ -2837,27 +2844,27 @@ Example</p></li>
 </ol>
 <h3 id="step-1-copy-this-code-at-the-bottom-of-css-file">Step 1: Copy this code at the bottom of css file</h3>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>h1 {</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>      color<span class="sc">:</span> <span class="co">#C34A79;</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>      font<span class="sc">-</span>size<span class="sc">:</span> 36px;</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>h1 {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>      color<span class="sc">:</span> <span class="co">#C34A79;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>      font<span class="sc">-</span>size<span class="sc">:</span> 36px;</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
 </div>
 <p>Now you can change the colour and font size of your biggest header on website</p>
 <h3 id="step2-and-now-copy-this-code-underneath-to-change-button-colours">Step2: And now copy this code underneath to change button colours</h3>
 <div class="layout-chunk" data-layout="l-body">
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>  .btn<span class="sc">-</span>outline<span class="sc">-</span>dark {</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> transparent; </span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">:</span> 1px solid;</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    .btn<span class="sc">-</span>outline<span class="sc">-</span>dark<span class="sc">:</span>hover {</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        color<span class="sc">:</span> white;</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>  .btn<span class="sc">-</span>outline<span class="sc">-</span>dark {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> transparent; </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">:</span> 1px solid;</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    .btn<span class="sc">-</span>outline<span class="sc">-</span>dark<span class="sc">:</span>hover {</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        border<span class="sc">-</span>color<span class="sc">:</span> <span class="fu">rgba</span>(<span class="dv">195</span>, <span class="dv">74</span>, <span class="dv">121</span>);</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        color<span class="sc">:</span> white;</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    }</span></code></pre></div>
 </div>
 <p>Now you change colours of button using coolers.co website. Also look at <a href="https://github.com/R-Girls/website/blob/main/rgirls-theme.css">R Grils github</a> for further codes.</p>
 <h3 id="step-3-menu-bar-dropdown">Step 3: Menu bar (dropdown)</h3>
@@ -2868,7 +2875,7 @@ Example</p></li>
 <li><p>Note: the links won’t work yet because we haven’t created the pages yet</p></li>
 </ul>
 <p><img src="images/Picture18.png" /></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

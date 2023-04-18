@@ -2,7 +2,6 @@
 title: "Lessons"
 description: |
   Creating a website with distill 
-
 output: 
   distill::distill_article:
     toc: true
@@ -23,41 +22,62 @@ knitr::opts_chunk$set(echo = FALSE)
 2.	Opening a new repository and naming it
 3.	Getting code from Github and creating a new R project
 4.	Installing package (“distill”)
-5.	Create website 
+5.	Creating website 
 
 ### Step 1: Sign in on Positcloud
 
 ### Step 2: Open Github account
 
-- Open an account with Github.
-- Create a new repository
-![](images/Picture1.png)
+- Open an account with [Github](https://github.com/).
+- Go to your repositories and ceate a new repository
 
-### Step 3: Name it
+![](images/Picture20.png)
 
-- Be careful as this name will be part of your website
-- Tick readme box
-![](images/Picture2.png)
+### Step 3: Name your repository
+
+- Be CAREFUL as this name will be part of your website
+
+
+
+![](images/Picture21.png)
+
+- Add a README file
+
+![](images/Picture22.png) 
+
 
 ### Step 4: Clone repo
 
-- Copy the code at Github (the URL)
--	green code button and copy URL 
-![](images/Picture4.png)
+- Click on the green code button and copy URL
+
+-	
+![](images/Picture23.png)
 
 ### Step 5: New project
 
 - Go to R positcloud and open new project (from Git Repository)
+
+
+![](images/Picture24.png)
+
 - Add the code that you copied at Github
-![](images/Picture5.png)
+
+
 
 ### Step 6: Setup R 
-Open R and change view settings and appearance.
 
-Tools-> global options > R markdown > view in viewer pane
+- Open Project and change appearance.
+
+**Tools-> global options > Appearance**
+
+- (Optional)If you want to see your changes in R instead of new window
+
+**Tools-> global options > R Markdown > show output preview in "Viewer Pane"**
 
 ### Step 7: Install distill
+
 - Close and open project again
+
 -	Install “distill” using this code (type in console)   
 
 ```{r eval=FALSE,echo=TRUE}
@@ -66,7 +86,9 @@ install.packages("distill")
 
 ```
 
-click enter 
+- click ENTER
+
+![](images/Picture25.png)
  
 - Then type this code
 
@@ -77,14 +99,16 @@ library(distill)
 ```
 
 
-click enter
+- click ENTER
  
-Go to packages and check if there is a ‘tick’ next to the distill box
+ 
+- Go to packages and check if there is a ‘tick’ next to the distill box
 
-
+![](images/Picture26.png)
 
 ### Step 7: Create website
-Type this code in consule, write the name of your website
+
+- Copy and paste this code in consule, write the name of your website
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -92,12 +116,13 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 
 ```
 
+![](images/Picture27.png)
 
+- First change the title of your website and then click “ENTER” to run code
 
+### Your website is now ready to view. 
 
-First change the title of your website and then click “enter” to run code
-
-Your website is now ready to view. We will learn about layouts next lesson.
+- We will learn about layouts in the next lesson.
 
 
 
@@ -105,7 +130,7 @@ Your website is now ready to view. We will learn about layouts next lesson.
 
 ### Learning objectives: 
 1)	Find a good layout for your website
-2)	Change the title at yaml
+2)	Change the title at yml
 3)	Add video link and images to pages
 4)	Change layout of text
 5)	Add emoji to website
@@ -122,14 +147,15 @@ install.packages("postcards")
 ```
 
 
-
 ### Step 2: Delete old index file
-- Tick index.rmd in files
-- Delete index.rmd  file in the ‘File’ tab
+
+- Tick index.rmd in Files tab (bottom right window)
+
+- Delete index.rmd file
 
 ### Step 3:Create layout 
 
-Add this code to console with your chosen template
+Add this code to console with your chosen template name for example:
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -137,10 +163,11 @@ create_article(file ="index", template= "trestles", package = "postcards")
 
 ```
 
+- Click on index.rmd from the Files tab (bottom right window)
 
-- Click on index.rmd from the file list on the right of screen
-- Go to top left window
--	Copy this code and paste after output in new line:
+- Now go to top left window
+
+-	Copy this code and paste after output in a new line:
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -149,19 +176,37 @@ site: distill::distill_website
 
 ```
 
-![](images/Picture8.png)
+![](images/Picture8.png){width=50%}
 
 •	This creates the template for the homepage
-•	Now this is our new homepage 
-•	Change title 
-•	Knit to see a preview of just the homepage
+
+•	Change title
+
+•	KNIT to see a preview of the homepage
 
 ### Step 4: Add images to R
 
-- Go to bottom right window "Files"
-- Make a new folder and name it "Images"
-- Upload any pictures inside folder
-- Change image “images/name of image.jpg” on top of index.rmd page.
+- On your computer desktop make a new folder called "Images".
+
+- Add all the images you want to use.
+
+- Change the folder into a compressed folder. 
+
+- Now in your R Positcloud go to bottom right window and click Upload
+
+- Choose the Images Compressed folder. Now you can use all your pictures in R
+
+### Change main picture on your Homepage
+
+- Go to index.rmd
+
+- In the top right window you can see "image:"
+
+- Change image by writing down the name of folder >slash > name of image > dot > format of image. ( in between the speech marks)
+
+
+![Example](images/Picture28.png)
+
 - To add picture on any page use this format: 
 
 ```{r eval=FALSE,echo=TRUE}
@@ -173,7 +218,7 @@ site: distill::distill_website
 
 ### Add video (from YouTube) to R
 
-  - Open  a Youtube video
+  - Open a Youtube video
   
   - Click “share” and then “embed” then copy code
   
@@ -182,12 +227,16 @@ site: distill::distill_website
 ### Step 5: Insert all your information into pages 
 
 - Change layout of page using these symbols
+
 - For title (bigger font) use   # biggest  ,## smaller, ### smaller
+
 - For bold use ** before and after **
+
 - For italics use * before and after *
 
 ### Step 6: To insert emoji 
-Run this code
+
+- Run this code in console (bottom left window)
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -195,8 +244,9 @@ install.packages("devtools")
 
 ```
 
+- Click ENTER
 
-then this
+- then this code: 
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -204,8 +254,7 @@ devtools::install_github("hadley/emo")
 
 ```
 
-
-Now you can add emoji like this:
+- Now you can add emoji like this:
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -213,10 +262,9 @@ Now you can add emoji like this:
 
 ```
 
- 
- 
+- For more emoji names visit [this page](https://github.com/hadley/emo)
 
-For more names visit [this page](https://github.com/hadley/emo)
+
 
 ## Lesson 3 
 
@@ -228,60 +276,54 @@ For more names visit [this page](https://github.com/hadley/emo)
 ### Step 1: Adding more pages to your website
 
 - Go to site.yml
+
 - Now copy ( text and href) of ‘about’
+
 - Paste underneath and rename it
 
-![](images/Picture9.png) 
+![](images/Picture30.png) 
 
 - Use this code to make new page 
 
 ```{r eval=FALSE,echo=TRUE}
 
-create_article(“name")
+create_article("name")
 ```
 
- exactly same as href
+- The name you use needs to be exactly the same as "href" name
  
-	![](images/Picture10.png) 
+- Write the title  of thus page in the top left window
+ 
+ **KNIT**
+ 
 ### Step 2: Add icons to buttons
  
-- Go to [R girls school](https://rgirls.org.uk/)
+- Go to index.rmd file
 
-- Click github and then website
-- Go to index.rmd
-- Copy codes and paste on your index page
+- In the top left window now change the code from "label" like this
 
 ```{r eval=FALSE,echo=TRUE}
 
-  - label: '< i class="fab fa-twitter"></i> Twitter'
+  - label: '<i class="fab fa-twitter"></i> Twitter'
     url: 'https://twitter.com/R_Girls_School target="_blank"'
-  - label: '< i class="fab fa-github"></i> GitHub'
+  - label: '<i class="fab fa-github"></i> GitHub'
     url: 'https://github.com/R-Girls target="_blank"'
-  - label: '< i class="fas fa-envelope">< /i> Contact Us'
+  - label: '<i class="fas fa-envelope"></i> Contact Us'
     url: "mailto:maryam.nawaz@greenoak.bham.sch.uk"
 
 ```
-
-    
-    ![](images/Picture11.png)
  
-![](images/Picture12.png)  
+- Now **Knit** and see changes
 
-Other available icons-> Go to [website](https://fontawesome.com/search) search and copy code 
+- **Taget=_blank** makes sure that the link opens in a new tab (window)
 
+- For more icons-> Go to [website](https://fontawesome.com/search) search and copy code between the <> marks
 
-### Step 3:  For links to open in new page (see above pic)
- - In Url first remove “ ” to single ‘ ’
- - Add 
- 
- ```{r eval=FALSE,echo=TRUE}
-target="_blank"
+- keep clicking **Knit** to see changes
 
-```
- after codes in URL. Inside the ' '
+### Step 3:  To push to Github
 
-### Step 4:  To push to Github
-
+- Enter the following code in console
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -289,13 +331,15 @@ install.packages("usethis")
 
 ```
 
+- click ENTER
+
+- Now enter this code into console using your login details with Github
+
 ```{r eval=FALSE,echo=TRUE}
 
-usethis::use_git_config(user.name= "msnawaz9",user.email= "maryam.nawaz@greenoak.bham.sch.uk")
+usethis::use_git_config(user.name= "your user name",user.email= "your email")
 
 ```
-
-- use your own login details
 
 - Enter in console 
 
@@ -306,8 +350,6 @@ usethis::create_github_token()
 
 and get token from Github (90 days)
 
-- Enter in console 
-
 ```{r eval=FALSE,echo=TRUE}
 
 gitcreds::gitcreds_set()
@@ -315,8 +357,12 @@ gitcreds::gitcreds_set()
 
 - **Enter password or token:** insert password here
 
-- Go to Git ->  
-- Add a message and click commit ->   Click push
+- Now go to Git ( top right window) -> click on **commit**
+
+- Tick all the boxes 
+
+- Add a message and click **commit** ->  and then Click **push**
+
 - Your website should have updated on Github
 
 

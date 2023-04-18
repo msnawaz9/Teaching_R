@@ -17,5 +17,5 @@ The steps are easy to follow and simple.
 Enjoy building your own website.`r emo::ji("smile")` 
 
 
-
+`r emo::ji("smile")`
 
