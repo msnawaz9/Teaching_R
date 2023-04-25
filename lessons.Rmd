@@ -165,7 +165,7 @@ install.packages("postcards")
 
 - Delete index.rmd file
 
-### Step 3:Create layout 
+### Step 3: Create layout 
 
 Add this code to console with your chosen template name for example:
 
@@ -300,7 +300,7 @@ devtools::install_github("hadley/emo")
 
 EXAMPLE:
 
-![](images/Picture30.png){width=30%}
+![](images/Picture30.png){width=40%}
 
 - Use this code to make new page 
 
@@ -340,7 +340,7 @@ create_article("name")
 
 - Keep clicking **Knit** to see changes
 
--- click **Build** (in top right window) and **then Build Website**
+- Click **Build** (in top right window) and **then Build Website**
 
 ### Step 3:  To push to Github
 
@@ -378,7 +378,7 @@ gitcreds::gitcreds_set()
 
 - **Enter password or token:** insert password here
 
-- save this code somewhere as you might need it again later.
+- Save this code somewhere as you might need it again later.
 
 - Now go to Git ( top right window) -> click on **commit**
 
@@ -404,7 +404,7 @@ Go to settings -> Pages -> change branch main to /docs
 2)	Import google fonts
 3)	Import colours for layout
 
-### Stage 1:Create new theme -> css file
+### Stage 1: Create new theme -> css file
 
 - Add this code to console   
 
@@ -454,7 +454,7 @@ theme: my_theme.css
 
 - To make changes go to your css file :
 
-### Example
+**Example**
 - Title size = 28px (How big do you want the title to be?)
 
 - Text color = What colour do you want the text to be?
@@ -466,7 +466,9 @@ theme: my_theme.css
 - Background color = #C34A79  (The colour of the banner)
 
   
-### Step 4: After making all the changes you want save on github
+### Step 4: Saving Changes
+
+After making all the changes you want save on github
 
 - click **Build** (in top right window) and **then Build Website**
 
@@ -481,7 +483,9 @@ theme: my_theme.css
 3)	Include a navigation bar
 4)	Add table of contents
 
-### Step 1: Copy this code at the bottom of css file
+### Step 1: Change colour of biggest font
+
+Copy this code at the bottom of css file
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -494,7 +498,9 @@ h1 {
 
 Now you can change the colour and font size of your biggest font on website
 
-### Step2: And now copy this code underneath to change button colours
+### Step2: To change button colours
+
+Copy this code underneath
 
 ```{r eval=FALSE,echo=TRUE}
   .btn-outline-dark {
