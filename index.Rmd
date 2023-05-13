@@ -1,5 +1,5 @@
 ---
-title: "Teaching R"
+title: "Build a Website"
 image: "images/flower2.jpg"
 links:
   - label: '<i class="fab fa-twitter"></i> Twitter'
@@ -19,7 +19,7 @@ site: distill::distill_website
  
 ## Introduction
 
-Here I will show you the steps to create a website using R (@posit.cloud)and distill. Hope it is helpful `r emo::ji("smile")` `r emo::ji("dog")`
+Here I will show you the steps to create a website using R (@posit.cloud) and distill. Hope it is helpful `r emo::ji("smile")` `r emo::ji("dog")`
 
 <center>
 
