@@ -111,7 +111,7 @@ library(distill)
 - click ENTER
  
  
-- Go to packages and check if there is a ‘tick’ next to the distill box
+- Go to packages (bottom right window) and check if there is a ‘tick’ next to the distill box
 
 ![](images/Picture26.png){width=75%}
 
@@ -141,10 +141,10 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 ## Lesson 2 
 
 ### Learning objectives: 
-1)	Find a good layout for your website
+1)	Find a good layout for your website homepage
 2)	Change the title at yml
 3)	Add video link and images to pages
-4)	Change layout of text
+4)	Add text on homepage
 5)	Add emoji to website
 
 ### Step 1: Choose layout
@@ -238,7 +238,9 @@ site: distill::distill_website
   
   - Add code to your page
 
-### Step 6: Insert all your information into pages 
+### Step 6: Writing text on Homepage
+
+- Now add all your info on your Homepage
 
 - Change layout of page using these symbols
 
@@ -311,7 +313,7 @@ create_article("name")
 
 - The name you use needs to be exactly the same as "href" name
  
-- Write the title  of thus page in the top left window
+- Write the title  of this page in the top left window
  
  **KNIT**
  
@@ -342,7 +344,7 @@ create_article("name")
 
 - Click **Build** (in top right window) and **then Build Website**
 
-### Step 3:  To push to Github
+### Step 3:  To push to Github (going ONLINE)
 
 - Enter the following code in console
 
@@ -371,6 +373,8 @@ usethis::create_github_token()
 
 and get token from Github (90 days)
 
+- Now paste this code into console
+
 ```{r eval=FALSE,echo=TRUE}
 
 gitcreds::gitcreds_set()
@@ -396,7 +400,7 @@ Go to settings -> Pages -> change branch main to /docs
 ![](images/Picture33.png){width=50%}
 </center>
 
-**Then view your website as its online now.**
+**Then view your website as its ONLINE now.**
 
 ## Lesson 4 
 ### Learning objectives: 
