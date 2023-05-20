@@ -52,14 +52,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/Picture22.png){width=70%}
 </center>
 
-### Step 4: Clone repo
+### Step 4: Clone repo and open new project on R
 
 - Click on the green code button and copy URL
 
 <center>
 ![](images/Picture23.png){width=50%}
 </center>
-### Step 5: New project
 
 - Go to R positcloud and open new project (from Git Repository)
 
@@ -72,7 +71,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 
-### Step 6: Setup R 
+### Step 5: Setup R 
 
 - Open Project and change appearance.
 
@@ -82,7 +81,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **Tools-> global options > R Markdown > show output preview in "Viewer Pane"**
 
-### Step 7: Install distill
+### Step 6: Install distill
 
 - Close and open project again
 
@@ -115,7 +114,7 @@ library(distill)
 
 ![](images/Picture26.png){width=75%}
 
-### Step 8: Create website
+### Step 7: Create website
 
 - Copy and paste this code in consule, write the name of your website
 
@@ -135,6 +134,11 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 **Your website is now ready to view.**
 
  We will learn about layouts in the next lesson.
+ 
+<center>
+![](images/4.png){width=70%}
+</center>
+
 
 
 
@@ -143,9 +147,8 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 ### Learning objectives: 
 1)	Find a good layout for your website homepage
 2)	Change the title at yml
-3)	Add video link and images to pages
-4)	Add text on homepage
-5)	Add emoji to website
+3)	Add text on homepage
+
 
 ### Step 1: Choose layout
 Choose a layout/template from this website 
@@ -165,7 +168,7 @@ install.packages("postcards")
 
 - Delete index.rmd file
 
-### Step 3: Create layout 
+### Step 3: Create template for Homepage
 
 Add this code to console with your chosen template name for example:
 
@@ -198,7 +201,31 @@ site: distill::distill_website
 
 •	KNIT to see a preview of the homepage
 
-### Step 4: Add images to R
+### Step 4: Writing text on Homepage
+
+- Now add all your info on your Homepage
+
+- Change layout of page using these symbols
+
+- For title (bigger font) use   # biggest  ,## smaller, ### smaller
+
+- For bold use ** before and after **
+
+- For italics use * before and after *
+
+<center>
+![](images/4.png){width=70%}
+</center>
+
+
+## Lesson 3 
+
+### Learning objectives: 
+
+1)	Add video link and images to homepage
+2)	Add emoji to website
+
+### Step 1: Add images to R
 
 - On your computer desktop make a new folder called "Images".
 
@@ -210,7 +237,7 @@ site: distill::distill_website
 
 - Choose the Images Compressed folder. Now you can use all your pictures in R
 
-### Step 5: Change main picture on your Homepage
+### Step 2: Change main picture on your Homepage
 
 - Go to index.rmd
 
@@ -238,19 +265,8 @@ site: distill::distill_website
   
   - Add code to your page
 
-### Step 6: Writing text on Homepage
 
-- Now add all your info on your Homepage
-
-- Change layout of page using these symbols
-
-- For title (bigger font) use   # biggest  ,## smaller, ### smaller
-
-- For bold use ** before and after **
-
-- For italics use * before and after *
-
-### Step 7: To insert emoji 
+### Step 3: To insert emoji 
 
 - Run this code in console (bottom left window)
 
@@ -283,9 +299,11 @@ devtools::install_github("hadley/emo")
 
 - click **Build** (in top right window) and **then Build Website**
 
+<center>
+![](images/4.png){width=70%}
+</center>
 
-
-## Lesson 3 
+## Lesson 4 
 
 ### Learning objectives: 
 1)	Add new pages to your website
@@ -402,7 +420,12 @@ Go to settings -> Pages -> change branch main to /docs
 
 **Then view your website as its ONLINE now.**
 
-## Lesson 4 
+<center>
+![](images/4.png){width=70%}
+</center>
+
+## Lesson 5
+
 ### Learning objectives: 
 1)	Create a css file for theme
 2)	Import google fonts
@@ -440,7 +463,7 @@ theme: my_theme.css
 
 ![](images/Picture32.png){width=50%}
 
-![Example](images/Picture16.png){width=60%}
+
 
 - Always **knit** to see changes until you are happy with font type and size
 
@@ -469,6 +492,8 @@ theme: my_theme.css
 
 - Background color = #C34A79  (The colour of the banner)
 
+![Example](images/Picture16.png){width=60%} 
+
   
 ### Step 4: Saving Changes
 
@@ -478,9 +503,11 @@ After making all the changes you want save on github
 
 - Commit- push to save on website as mentioned above
 
+<center>
+![](images/4.png){width=70%}
+</center>
 
-
-## Lesson 5
+## Lesson 6
 ### Learning objectives: 
 1)	Changing the font colours
 2)	Change button colours
@@ -566,3 +593,5 @@ Copy this code underneath
 - Push all changes to Github
 
 **Hope you enjoyed making your new website with R `r emo::ji("smile")`**
+
+![](images/2.png) 
