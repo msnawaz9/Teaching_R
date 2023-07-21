@@ -125,7 +125,7 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 ```
 
 <center>
-![](images/Picture27.png)
+![](images/Picture80.png)
 </center>
 - First change the title of your website and then click “ENTER” to run code
 
@@ -136,7 +136,7 @@ create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
  We will learn about layouts in the next lesson.
  
 <center>
-![](images/4.png){width=70%}
+![](images/4.png){width=70%}##
 </center>
 
 
