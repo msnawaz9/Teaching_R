@@ -17,17 +17,17 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Learning Objectives
 
-1.	Opening an account at Github 
+1.	Opening an account at GitHub 
 2.	Opening a new repository and naming it
 3.	Getting code from Github and creating a new R project
 4.	Installing package (“distill”)
 5.	Creating website 
 
-### Step 1: Sign in on Positcloud
+### Step 1: Sign in on Posit Cloud using school email
 
-### Step 2: Open Github account
+### Step 2: Open GitHub account
 
-- Open an account with [Github](https://github.com/).
+- Open an account with [GitHub](https://github.com/).
 - Go to your repositories and ceate a new repository
 
 <center>
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/Picture21.png){width=70%}
 </center>
 
-- Add a README file
+- Tick the box to 'Add a README file'
 
 <center>
 ![](images/Picture22.png){width=70%}
@@ -67,7 +67,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ![](images/Picture24.png){width=50%}
 </center>
 
-- Add the code that you copied at Github
+- Paste in the code that you copied at GitHub
 
 
 
@@ -81,7 +81,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **Tools-> global options > R Markdown > show output preview in "Viewer Pane"**
 
-### Step 6: Install distill
+### Step 6: Install distill package
 
 - Close and open project again
 
@@ -110,26 +110,28 @@ library(distill)
 - click ENTER
  
  
-- Go to packages (bottom right window) and check if there is a ‘tick’ next to the distill box
+- Go to packages (bottom right pane) and check if there is a ‘tick’ next to the distill box
 
 ![](images/Picture26.png){width=75%}
 
 ### Step 7: Create website
 
-- Copy and paste this code in consule, write the name of your website
+- Copy and paste this code in consule making sure you write the name of your website
 
 ```{r eval=FALSE,echo=TRUE}
 
 create_website(dir = ".", title ="name of your website", gh_pages = TRUE)
 
 ```
+Example: 
 
 <center>
 ![](images/Picture80.png)
 </center>
-- First change the title of your website and then click “ENTER” to run code
 
-- click **Build** (in top right window) and **then Build Website**
+- Click 'ENTER' to run code
+
+- click **Build** (in top right window) and then **Build Website**
 
 **Your website is now ready to view.**
 
