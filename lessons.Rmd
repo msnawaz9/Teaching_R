@@ -138,7 +138,7 @@ Example:
  We will learn about layouts in the next lesson.
  
 <center>
-![](images/4.png){width=70%}##
+![](images/4.png){width=70%}
 </center>
 
 
@@ -146,17 +146,17 @@ Example:
 
 ## Lesson 2 
 
-### Learning objectives: 
+### Learning objectives
 1)	Find a good layout for your website homepage
-2)	Change the title at yml
-3)	Add text on homepage
+2)	Change the title in YAML
+3)	Add text on the homepage
 
 
 ### Step 1: Choose layout
 Choose a layout/template from this website 
 [Seankross postcards](https://github.com/seankross/postcards)
 
-Add this code to console:  
+Add this code in the console and click ENTER:  
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -164,13 +164,13 @@ install.packages("postcards")
 ```
 
 
-### Step 2: Delete old index file
+### Step 2: Delete the old index file
 
-- Tick index.rmd in Files tab (bottom right window)
+- Tick index.rmd in Files tab (bottom right pane)
 
 - Delete index.rmd file
 
-### Step 3: Create template for Homepage
+### Step 3: Create template for homepage
 
 Add this code to console with your chosen template name for example:
 
@@ -180,9 +180,9 @@ create_article(file ="index", template= "trestles", package = "postcards")
 
 ```
 
-- Click on index.rmd from the Files tab (bottom right window)
+- Click on index.rmd from the Files tab (bottom right pane)
 
-- Now go to top left window
+- Now go to top left pane.
 
 -	Copy this code and paste after output in a new line:
 
@@ -203,9 +203,9 @@ site: distill::distill_website
 
 •	KNIT to see a preview of the homepage
 
-### Step 4: Writing text on Homepage
+### Step 4: Writing text on the homepage
 
-- Now add all your info on your Homepage
+- Now add all your info on your homepage
 
 - Change layout of page using these symbols
 
