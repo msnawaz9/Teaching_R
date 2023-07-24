@@ -224,28 +224,32 @@ site: distill::distill_website
 
 ### Learning objectives: 
 
-1)	Add video link and images to homepage
-2)	Add emoji to website
+1)	Personalise homepage
+2)  Add images to homepage
+3)	Add emoji's
 
-### Step 1: Add images to R
+### Step 1: Add images to homepage
 
 - On your computer desktop make a new folder called "Images".
 
-- Add all the images you want to use.
+- Save all the images you want to use in the folder
 
-- Change the folder into a compressed folder. 
+- Right click on the folder and choose 'compress to ZIP file'
+<center>
+![](images/222.png){width=50%}
+- Now in your R Positcloud go to bottom right pane and click 'Upload' and select compressed images folder
 
-- Now in your R Positcloud go to bottom right window and click Upload
+- Now you can use all your pictures in your website.
 
-- Choose the Images Compressed folder. Now you can use all your pictures in R
+### Step 2: Change main picture on your homepage
 
-### Step 2: Change main picture on your Homepage
+- Undere the Files tab in the bottom right pane select 'index.rmd'.
 
-- Go to index.rmd
+- In the Source Editor (top left pane) you can see "image:"
 
-- In the top right window you can see "image:"
+- Change image by writing down the name of folde/name of image.format of image. ( in between the speech marks)
 
-- Change image by writing down the name of folder >slash > name of image > dot > format of image. ( in between the speech marks)
+- Note: Be careful. The pathway is case sensitive.
 
 <center>
 ![Example](images/Picture28.png){width=50%}
@@ -258,19 +262,9 @@ site: distill::distill_website
 
 ```
  
+### Step 3: Insert emoji 
 
-**Add video (from YouTube) to R**
-
-  - Open a Youtube video
-  
-  - Click “share” and then “embed” then copy code
-  
-  - Add code to your page
-
-
-### Step 3: To insert emoji 
-
-- Run this code in console (bottom left window)
+- Run this code in console (bottom left pane)
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -287,6 +281,8 @@ install.packages("devtools")
 devtools::install_github("hadley/emo")
 
 ```
+
+- Click ENTER
 
 - Now you can add emoji like this:
 
