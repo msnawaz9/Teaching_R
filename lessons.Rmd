@@ -474,7 +474,7 @@ theme: my_theme.css
 
 - Copy the code in between the style tags < style>
 
-- Now add at the top of css file all the fonts you want to use. Customise !!!!
+- Now add at the **top** of css file all the fonts you want to use.
 
 ![](images/Picture32.png){width=50%}
 
@@ -488,26 +488,13 @@ theme: my_theme.css
 
 - Make a palette and download for later use.
 
-- You can lock colors you like or press space bar for new colors
-
-- You can export to pdf (HEX and RGB)
+- You can lock colors you like or press space bar for new colors.
 
 ![](images/Picture17.png) 
 
-- To make changes go to your css file :
+- To make changes choose your 'my_theme.css' file. See example below :
 
-**Example**
-- Title size = 28px (How big do you want the title to be?)
-
-- Text color = What colour do you want the text to be?
-
-- Text size = 28px (size of text)
-
-- Hover color = white (when you move mouse over the writing what colour should it change into)
-
-- Background color = #C34A79  (The colour of the banner)
-
-![Example](images/Picture16.png){width=60%} 
+![](images/css2.png){width=70%}
 
   
 ### Step 4: Saving Changes
@@ -546,7 +533,7 @@ Now you can change the colour and font size of your biggest font on website
 
 ### Step2: To change button colours
 
-Copy this code underneath
+Copy this code at the bottom of your css file.
 
 ```{r eval=FALSE,echo=TRUE}
   .btn-outline-dark {
@@ -575,7 +562,7 @@ Copy this code underneath
 
 - Go to _site.yml
 
-- The menu argument allows you to add dropdown options in the header
+- The menu argument allows you to add dropdown options in the header.
 
 - 	Make sure the spaces are properly formatted or you’ll get an error (even one tab off on menu as example)
 

@@ -2786,8 +2786,9 @@ More Information
 <p><strong>KNIT</strong></p>
 <h3 id="step-2-add-icons-to-buttons">Step 2: Add icons to buttons</h3>
 <ul>
-<li><p>Go to index.rmd file</p></li>
-<li><p>In the top left window now change the code from “label” like this</p></li>
+<li><p>Choose ‘index.rmd’ file</p></li>
+<li><p>In the Source Editor change the ‘label’ and ‘url’ lines to look like this.</p></li>
+<li><p>Note: Be very careful with spaces, speech marks, brackets etc.</p></li>
 </ul>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -2800,8 +2801,10 @@ More Information
 </div>
 </div>
 <ul>
-<li><p>Now <strong>Knit</strong> and see changes</p></li>
+<li><p><strong>Knit</strong> and see changes</p></li>
 <li><p>“Target=_blank” makes sure that the link opens in a new tab (window)</p></li>
+<li><p>(Optional) Use your own personal Twitter and GitHub url’s</p></li>
+<li><p>Insert your school email address.</p></li>
 <li><p>For more icons-&gt; Go to <a href="https://fontawesome.com/search">website</a>, search and copy code between the &lt;&gt; marks</p></li>
 <li><p>Keep clicking <strong>Knit</strong> to see changes</p></li>
 <li><p>Click <strong>Build</strong> (in top right window) and <strong>then Build Website</strong></p></li>
@@ -2888,7 +2891,7 @@ More Information
 <li><p>Import google fonts from this <a href="https://fonts.google.com/">website</a></p></li>
 <li><p>Search for fav font and select <span class="citation" data-cites="import">@import</span></p></li>
 <li><p>Copy the code in between the style tags &lt; style&gt;</p></li>
-<li><p>Now add at the top of css file all the fonts you want to use. Customise !!!!</p></li>
+<li><p>Now add at the <strong>top</strong> of css file all the fonts you want to use.</p></li>
 </ul>
 <p><img src="images/Picture32.png" style="width:50.0%" /></p>
 <ul>
@@ -2898,25 +2901,13 @@ More Information
 <ul>
 <li><p>Go to <a href="https://coolors.co/">coolers website</a></p></li>
 <li><p>Make a palette and download for later use.</p></li>
-<li><p>You can lock colors you like or press space bar for new colors</p></li>
-<li><p>You can export to pdf (HEX and RGB)</p></li>
+<li><p>You can lock colors you like or press space bar for new colors.</p></li>
 </ul>
 <p><img src="images/Picture17.png" /></p>
 <ul>
-<li>To make changes go to your css file :</li>
+<li>To make changes choose your ‘my_theme.css’ file. See example below :</li>
 </ul>
-<p><strong>Example</strong>
-- Title size = 28px (How big do you want the title to be?)</p>
-<ul>
-<li><p>Text color = What colour do you want the text to be?</p></li>
-<li><p>Text size = 28px (size of text)</p></li>
-<li><p>Hover color = white (when you move mouse over the writing what colour should it change into)</p></li>
-<li><p>Background color = #C34A79 (The colour of the banner)</p></li>
-</ul>
-<figure>
-<img src="images/Picture16.png" style="width:60.0%" alt="Example" />
-<figcaption aria-hidden="true">Example</figcaption>
-</figure>
+<p><img src="images/css2.png" style="width:70.0%" /></p>
 <h3 id="step-4-saving-changes">Step 4: Saving Changes</h3>
 <p>After making all the changes you want save on github</p>
 <ul>
@@ -2944,7 +2935,7 @@ More Information
 </div>
 <p>Now you can change the colour and font size of your biggest font on website</p>
 <h3 id="step2-to-change-button-colours">Step2: To change button colours</h3>
-<p>Copy this code underneath</p>
+<p>Copy this code at the bottom of your css file.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  .btn<span class="sc">-</span>outline<span class="sc">-</span>dark {</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>        background<span class="sc">-</span>color<span class="sc">:</span> transparent; </span>
@@ -2967,7 +2958,7 @@ More Information
 <h3 id="step-3-menu-bar-dropdown">Step 3: Menu bar (dropdown)</h3>
 <ul>
 <li><p>Go to _site.yml</p></li>
-<li><p>The menu argument allows you to add dropdown options in the header</p></li>
+<li><p>The menu argument allows you to add dropdown options in the header.</p></li>
 <li><p>Make sure the spaces are properly formatted or you’ll get an error (even one tab off on menu as example)</p></li>
 <li><p>Note: the links won’t work yet because we haven’t created the pages yet</p></li>
 </ul>
