@@ -209,11 +209,11 @@ site: distill::distill_website
 
 - Change layout of page using these symbols
 
-- For title (bigger font) use   # biggest  ,## smaller, ### smaller
+- Use # for titles; # main title, ## subtitle, ### smaller subtitle and so on.
 
-- For bold use ** before and after **
+- For bold use ** before and after the word **
 
-- For italics use * before and after *
+- For italics use * before and after the word *
 
 <center>
 ![](images/4.png){width=70%}
@@ -305,39 +305,52 @@ devtools::install_github("hadley/emo")
 
 ### Learning objectives: 
 1)	Add new pages to your website
-2)	Add icons to buttons
-3)	Push changes to Github
+2)	Add icons to buttons and personalse
 
 ### Step 1: Adding more pages to your website
 
-- Go to site.yml
+- Under the Files tab click the 'site.yml' file. You will find it in the bottom right pane.
 
-- Now copy ( text and href) of ‘about’
+- Now copy the 2 lines starting with 'text' and 'href'.
 
-- Paste underneath and rename it
+- Paste underneath and replace whatever is after text with the name of one of your website pages.
+
+- Change the href name to match the page name.
+
+- Repeat these steps for every page in your website.
 
 EXAMPLE:
 
-![](images/Picture30.png){width=40%}
+![](images/yml.png){width=40%}
 
-- Use this code to make new page 
+- In the console (bottom left pane) type this code to create a new page.
 
 ```{r eval=FALSE,echo=TRUE}
 
 create_article("name")
 ```
 
-- The name you use needs to be exactly the same as "href" name
- 
-- Write the title  of this page in the top left window
+- The name you use needs to be exactly the same as "href" name that you used in 'site.yml' file.
+
+- **Knit** this new page and it will appear in the Source Editor pane.
+
+- Change the title to the name of your page.
+
+- Scroll down and type in whatever text you want to see on your page.
+
+- Make your code look **exactly** like this by deleting unwanted lines.
+
+![](images/newp.png){width=90%}
  
  **KNIT**
  
 ### Step 2: Add icons to buttons
  
-- Go to index.rmd file
+- Choose 'index.rmd' file
 
-- In the top left window now change the code from "label" like this
+- In the Source Editor change the 'label' and 'url' lines to look like this.
+
+- Note: Be very careful with spaces, speech marks, brackets etc.
 
 ```{r eval=FALSE,echo=TRUE}
 
@@ -350,9 +363,13 @@ create_article("name")
 
 ```
  
-- Now **Knit** and see changes
+- **Knit** and see changes
 
 - "Target=_blank" makes sure that the link opens in a new tab (window)
+
+- (Optional) Use your own personal Twitter and GitHub url's
+
+- Insert your school email address.
 
 - For more icons-> Go to [website](https://fontawesome.com/search), search and copy code between the <> marks
 
