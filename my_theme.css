@@ -22,10 +22,10 @@ html {
   --aside-size:      20px;
   --fig-cap-size:    20px;
   /*-- Main font colors --*/
-  --title-color:     #647FDB;
-  --header-color:    #647FDB;
+  --title-color:     #540D6E;
+  --header-color:    #540D6E;
   --body-color:      rgba(0, 0, 0, 0.8);
-  --aside-color:     #647FDB;
+  --aside-color:     #540D6E;
   --fig-cap-color:   rgba(0, 0, 0, 0.6);
   /*-- Specify custom fonts ~~~ must be imported above   --*/
   --heading-font:    Alkatra; 
@@ -37,7 +37,7 @@ html {
 /*-- ARTICLE METADATA --*/
 d-byline {
   --heading-size:    20px;
-  --heading-color:    #647FDB;
+  --heading-color:    #540D6E;
   --body-size:       20px;
   --body-color:      rgba(0, 0, 0, 0.8);
 }
@@ -61,10 +61,10 @@ d-appendix {
 
 .distill-site-header {
   --title-size:       20px;
-  --text-color:       #040404;
+  --text-color:       #E8E9EB;
   --text-size:        20px;
-  --hover-color:      darkblue;
-  --bkgd-color:       #647FDB;
+  --hover-color:      yellow;
+  --bkgd-color:       #540D6E;
 }
 
 .distill-site-footer {
@@ -78,20 +78,20 @@ d-appendix {
 /* Add any additional CSS rules below                      */
 
 h1 {
-	  color: #647FDB;
+	  color: #540D6E;
 	  font-size: 36px;
 	}
 
 .btn-outline-dark {
 	    background-color: transparent; 
-	    color: #647FDB;
+	    color: #540D6E;
 	    border: 1px solid;
 	    border-color: rgba(195, 74, 121);
 	}
 	
 
 	.btn-outline-dark:hover {
-	    background-color: #647FDB;
+	    background-color: #540D6E;
 	    border-color: rgba(195, 74, 121);
 	    color: white;
 	}

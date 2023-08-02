@@ -295,7 +295,7 @@ site: distill::distill_website
 - Note: Be careful. The pathway is case sensitive.
 
 <center>
-![Example](images/Picture28.png){width=50%}
+![Example](images/Picture28.png){width=60%}
 </center>
 - To add picture on any page use this format: 
 
